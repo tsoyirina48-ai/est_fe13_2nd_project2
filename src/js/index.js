@@ -5,11 +5,17 @@ const tabsList = tabsContianer.querySelector(".tabs__list");
 const tabButtons = tabsList.querySelectorAll(".tab__buttons");
 const tabPanels = tabsContianer.querySelectorAll(".tabs__panels > div");
 
-tabButtons.forEach((tabButtons, index) => {
+tabsList.setAttribute("role", "tablist");
+tabButtons.forEach((tab, index) => {
   if (index === 0) {
   } else {
+    tab.setAttribute("tabindes", "-1");
     tabPanels[index].setAttribute("hidden", "");
   }
+});
+
+tabPanels.forEach(panel => {
+  panel.setAttribute("tabindex", "0");
 });
 
 tabsContianer.addEventListener("click", e => {
