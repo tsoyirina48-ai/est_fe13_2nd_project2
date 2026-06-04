@@ -38,7 +38,7 @@ function initNav() {
   const main = document.querySelector("main");
   const siblings = document.querySelectorAll(".wrapper > *:not(nav)");
 
-  let navIsShown = true;
+  let navIsShown = false;
 
   navCloseBtn.addEventListener(
     "click",
@@ -121,7 +121,7 @@ function initNav() {
       navButton.removeAttribute("hidden");
       navCloseBtn.removeAttribute("hidden");
       navContent.setAttribute("role", "dialog");
-      navContent.setAttribute("aria-labelledby", "nav-toggle");
+      navContent.setAttribute("aria-labelledby", "site-nav-label");
 
       if (navIsShown) {
         makeNavInert();

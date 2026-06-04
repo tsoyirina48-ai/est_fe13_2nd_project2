@@ -1,17 +1,20 @@
-.site__nav__togle[aria-expanded="false"] ~ .site__nav__content {
+.site__nav__togle ~ .site__nav__content {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
   z-index: 10;
+  transition:
+    transform 0.6s ease-out,
+    box-shadow 0.6s ease-out;
+  box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0);
+  background-color: white;
   width: 75vw;
   overflow-y: auto;
 }
 
 .site__nav__togle[aria-expanded="true"] ~ .site__nav__content {
-  /* move the nav content back into view */
-  transform: translateX(0vw);
-  /* add the translucent background behind the navigation */
+  transform: translateX(0);
   box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0.75);
 }
