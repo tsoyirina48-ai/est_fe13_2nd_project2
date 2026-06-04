@@ -2,6 +2,8 @@
 
 > ROUNZ 홈페이지의 UI/UX를 참조하여 홈페이지를 JavaScript를 활용하여 제작
 
+## 제작 계획
+
 ```mermaid
 gantt
     title 제작 계획
@@ -25,4 +27,12 @@ gantt
     웹 접근성 검사            :test2, 06/16, 2d
     크로스 브라우징 테스트    :test3, 06/17, 1d
     발표                     :milestone, 06/18, 0d
+```
+
+## 시작하기
+
+```bash
+git clone https://github.com/agw76638/est_fe13_2nd_project.git
+npm install
+npm run dev
 ```
