@@ -34,3 +34,69 @@
   --sidebar-border: oklch(0.94 0.001 0);
   --sidebar-ring: oklch(0.5 0.1 200);
 }
+
+.text-display-large {
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+}
+
+.text-display-medium {
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.text-display-small {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.text-headline-large {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.text-headline-medium {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.text-headline-small {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-body-large {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.text-body-medium {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.text-body-small {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.text-title-large {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.text-title-medium {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.text-title-small {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
