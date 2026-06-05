@@ -1,4 +1,4 @@
-import { createIcons, Menu, UserRound, ShoppingCart } from "lucide";
+import { createIcons, Menu, ShoppingCart, UserRound } from "lucide";
 import "../../css/modules/header.css";
 
 const siteHeader = document.querySelector(".site__header");
@@ -18,7 +18,10 @@ export function renderHeader() {
             <a href="#"><i data-lucide="user-round"></i></a>
           </li>
           <li>
-            <a href="#"><i data-lucide="shopping-cart"></i></a>
+            <a href="#" class="pile">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart__counter badge">1</span>
+            </a>
           </li>
         </ul>
         <div class="site__nav__content" inert>
@@ -43,11 +46,11 @@ function initNav() {
 
   navCloseBtn.addEventListener(
     "click",
-    function () {
+    () => {
       hideNav();
       navButton.focus();
     },
-    false
+    false,
   );
 
   navButton.addEventListener("click", showNavigationContent, false);

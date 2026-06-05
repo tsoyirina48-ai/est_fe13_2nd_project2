@@ -1,3 +1,10 @@
+/* Layout */
+.wrapper {
+  margin-inline: auto;
+  max-width: 440px;
+}
+
+/* Typography */
 .text-display-large {
   font-size: 57px;
   line-height: 64px;
@@ -62,4 +69,19 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.1px;
+}
+
+/* Other Utilites */
+.pile {
+  display: grid;
+  grid-template-areas: "pile";
+  place-items: center;
+
+  > * {
+    grid-area: pile;
+  }
+}
+
+.badge {
+  place-self: start end;
 }

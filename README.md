@@ -46,7 +46,7 @@ gantt
 | 빌드      | [Vite](https://vite.dev)                                             |
 | 아이콘    | [Lucide](https://lucide.dev)                                         |
 | CSS 리셋  | [modern-normalize](https://github.com/sindresorhus/modern-normalize) |
-| 코드 품질 | [ESLint](https://eslint.org), [Prettier](https://prettier.io)        |
+| 코드 품질 | [Biome](https://biomejs.dev)                                         |
 
 ## 프로젝트 구조
 
@@ -61,7 +61,7 @@ src/
     ├── base/
     │   ├── variables.css    # 디자인 토큰 (색상, 간격 등)
     │   ├── reset.css        # 전역 기본 스타일
-    │   └── typography.css   # 타이포그래피 유틸리티 클래스
+    │   └── utilities.css    # 유틸리티 클래스
     ├── layout/
     ├── modules/
     └── pages/               # 페이지별 스타일

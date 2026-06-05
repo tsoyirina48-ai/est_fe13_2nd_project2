@@ -33,6 +33,7 @@
 
 .site__nav__actions a {
   color: var(--primary);
+  text-decoration: none;
 }
 
 .site__nav__toggle ~ .site__nav__content {
@@ -55,4 +56,13 @@
 .site__nav__toggle[aria-expanded="true"] ~ .site__nav__content {
   transform: translateX(0);
   box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0.75);
+}
+
+.cart__counter {
+  border-radius: 50%;
+  background-color: var(--accent);
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  text-align: center;
 }
