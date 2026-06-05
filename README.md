@@ -29,6 +29,16 @@ gantt
     발표                     :milestone, 06/18, 0d
 ```
 
+## 팀원
+
+| 이름     | 역할 | 주요 담당 | GitHub                                              | 연락               |
+| -------- | ---- | --------- | --------------------------------------------------- | ------------------ |
+| 안건욱   |      |           | [agw76638](https://github.com/agw76638)             | agw76638@gmail.com |
+| 송주윤   |      |           | [Polao63](https://github.com/Polao63)               |                    |
+| 장진혁   |      |           | [wwg98](https://github.com/wwg98)                   |                    |
+| 최정원   |      |           | [RaeChoe](https://github.com/RaeChoe)               |                    |
+| 최이리나 |      |           | [tsoyirina48-ai](https://github.com/tsoyirina48-ai) |                    |
+
 ## 시작하기
 
 ```bash
