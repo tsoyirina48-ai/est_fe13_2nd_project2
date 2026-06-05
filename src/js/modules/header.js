@@ -6,7 +6,10 @@ export function renderHeader() {
   siteHeader.innerHTML = /* HTML */ `
     <div class="wrapper">
       <nav class="site__nav" aria-labelledby="site-nav-label">
-        <button class="site__nav__toggle" aria-expanded="false">
+        <button
+          class="site__nav__toggle"
+          aria-expanded="false"
+          aria-label="메뉴 열기">
           <i data-lucide="menu"></i>
         </button>
         <a href="/" class="site__nav__logo" id="site-nav-label">ROUNZ</a>
@@ -19,7 +22,7 @@ export function renderHeader() {
           </li>
         </ul>
         <div class="site__nav__content" inert>
-          <button class="site__nav__close">닫기</button>
+          <button class="site__nav__close" aria-label="메뉴 닫기">닫기</button>
         </div>
       </nav>
     </div>
