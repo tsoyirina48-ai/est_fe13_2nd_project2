@@ -39,6 +39,34 @@ gantt
 | 최정원   |      |           | [RaeChoe](https://github.com/RaeChoe)               | picasomati@gmail.com  |
 | 최이리나 |      |           | [tsoyirina48-ai](https://github.com/tsoyirina48-ai) | tsoyirina48@gmail.com |
 
+## 기술 스택
+
+| 분류      | 도구                                                                 |
+| --------- | -------------------------------------------------------------------- |
+| 빌드      | [Vite](https://vite.dev)                                             |
+| 아이콘    | [Lucide](https://lucide.dev)                                         |
+| CSS 리셋  | [modern-normalize](https://github.com/sindresorhus/modern-normalize) |
+| 코드 품질 | [ESLint](https://eslint.org), [Prettier](https://prettier.io)        |
+
+## 프로젝트 구조
+
+```
+src/
+├── js/
+│   ├── main.js              # 전역 CSS 진입점
+│   ├── pages/
+│   └── modules/
+└── css/
+    ├── style.css            # CSS 진입점 (import만)
+    ├── base/
+    │   ├── variables.css    # 디자인 토큰 (색상, 간격 등)
+    │   ├── reset.css        # 전역 기본 스타일
+    │   └── typography.css   # 타이포그래피 유틸리티 클래스
+    ├── layout/
+    ├── modules/
+    └── pages/               # 페이지별 스타일
+```
+
 ## 시작하기
 
 ```bash
