@@ -46,7 +46,7 @@ gantt
 | 빌드      | [Vite](https://vite.dev)                                             |
 | 아이콘    | [Lucide](https://lucide.dev)                                         |
 | CSS 리셋  | [modern-normalize](https://github.com/sindresorhus/modern-normalize) |
-| 코드 품질 | [ESLint](https://eslint.org), [Prettier](https://prettier.io)        |
+| 코드 품질 | [Biome](https://biomejs.dev)                                         |
 
 ## 프로젝트 구조
 
