@@ -38,8 +38,6 @@ function initNav() {
   const main = document.querySelector("main");
   const siblings = document.querySelectorAll(".wrapper > *:not(nav)");
 
-  let navIsShown = false;
-
   navCloseBtn.addEventListener(
     "click",
     function () {
@@ -59,7 +57,6 @@ function initNav() {
     // 	let btn = dropdown.parentNode.querySelector("button");
     // 	btn.setAttribute("aria-expanded", "false");
     // });
-    navIsShown = false;
     makeNavInert();
     removePageInert();
   }
@@ -72,7 +69,7 @@ function initNav() {
     //   footer.setAttribute("inert", "");
     // }
 
-    for (var i = 0; i < siblings.length; i++) {
+    for (let i = 0; i < siblings.length; i++) {
       siblings[i].setAttribute("inert", "true");
     }
   }
@@ -85,7 +82,7 @@ function initNav() {
     // 	footer.removeAttribute("inert");
     // }
 
-    for (var i = 0; i < siblings.length; i++) {
+    for (let i = 0; i < siblings.length; i++) {
       siblings[i].removeAttribute("inert");
     }
   }
@@ -100,41 +97,8 @@ function initNav() {
 
   function showNavigationContent() {
     navButton.setAttribute("aria-expanded", "true");
-    navIsShown = true;
     removeNavInert();
     makePageInert();
     navCloseBtn.focus();
   }
-
-  // const handleResize = e => {
-  //   if (e.matches) {
-  //     // is "desktop"
-  //     navContent.removeAttribute("hidden");
-  //     navButton.setAttribute("hidden", "");
-  //     navCloseBtn.setAttribute("hidden", "");
-
-  //     navContent.removeAttribute("role");
-  //     navContent.removeAttribute("aria-labelledby");
-
-  //     navCloseBtn.setAttribute("hidden", "");
-  //     removeNavInert();
-  //     removePageInert();
-  //   } else {
-  //     navButton.removeAttribute("hidden");
-  //     navCloseBtn.removeAttribute("hidden");
-  //     navContent.setAttribute("role", "dialog");
-  //     navContent.setAttribute("aria-labelledby", "site-nav-label");
-
-  //     if (navIsShown) {
-  //       makeNavInert();
-  //     } else {
-  //       removeNavInert();
-  //     }
-
-  //     navButton.addEventListener("click", showNavigationContent, false);
-  //   }
-  // };
-
-  // isDesktop.addEventListener("change", e => handleResize(e));
-  // handleResize(isDesktop);
 }
