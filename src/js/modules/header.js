@@ -9,8 +9,8 @@ export function renderHeader() {
         <button class="site__nav__togle" aria-expanded="false">
           <i data-lucide="menu"></i>
         </button>
-        <span id="site-nav-label">ROUNZ</span>
-        <ul role="list">
+        <a href="/" class="site__nav__logo" id="site-nav-label">ROUNZ</a>
+        <ul class="site__nav__actions" role="list">
           <li>
             <a href="#"><i data-lucide="user-round"></i></a>
           </li>
@@ -18,7 +18,7 @@ export function renderHeader() {
             <a href="#"><i data-lucide="shopping-cart"></i></a>
           </li>
         </ul>
-        <div class="site__nav__content">
+        <div class="site__nav__content" inert>
           <button class="site__nav__close">닫기</button>
         </div>
       </nav>
