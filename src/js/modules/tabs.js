@@ -55,7 +55,7 @@ export function renderTabs() {
       switchTab(tabButtons[tabButtons.length - 1]);
     } else {
       switchTab(
-        currentTab.parentElement.previousElementSibling.querySelector("a")
+        currentTab.parentElement.previousElementSibling.querySelector("a"),
       );
     }
   }

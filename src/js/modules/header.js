@@ -1,7 +1,7 @@
-import { createIcons, Menu, ShoppingCart, UserRound } from 'lucide';
-import '../../css/modules/header.css';
+import { createIcons, Menu, ShoppingCart, UserRound } from "lucide";
+import "../../css/modules/header.css";
 
-const siteHeader = document.querySelector('.site__header');
+const siteHeader = document.querySelector(".site__header");
 export function renderHeader() {
   siteHeader.innerHTML = /* HTML */ `
     <div class="wrapper">
@@ -35,17 +35,17 @@ export function renderHeader() {
 }
 
 function initNav() {
-  const nav = document.querySelector('.site__nav');
+  const nav = document.querySelector(".site__nav");
   // nav.classList.add("enhanced");
-  const navButton = document.querySelector('.site__nav__toggle');
-  const navCloseBtn = document.querySelector('.site__nav__close');
-  const navContent = document.querySelector('.site__nav__content');
+  const navButton = document.querySelector(".site__nav__toggle");
+  const navCloseBtn = document.querySelector(".site__nav__close");
+  const navContent = document.querySelector(".site__nav__content");
   // const isDesktop = window.matchMedia("(min-width: 52em)");
-  const main = document.querySelector('main');
-  const siblings = document.querySelectorAll('.wrapper > *:not(nav)');
+  const main = document.querySelector("main");
+  const siblings = document.querySelectorAll(".wrapper > *:not(nav)");
 
   navCloseBtn.addEventListener(
-    'click',
+    "click",
     () => {
       hideNav();
       navButton.focus();
@@ -53,11 +53,11 @@ function initNav() {
     false,
   );
 
-  navButton.addEventListener('click', showNavigationContent, false);
+  navButton.addEventListener("click", showNavigationContent, false);
 
   function hideNav() {
-    nav.classList.add('closed');
-    navButton.setAttribute('aria-expanded', 'false');
+    nav.classList.add("closed");
+    navButton.setAttribute("aria-expanded", "false");
     // dropdowns.forEach(function (dropdown) {
     // 	dropdown.setAttribute("hidden", "");
     // 	let btn = dropdown.parentNode.querySelector("button");
@@ -69,40 +69,40 @@ function initNav() {
 
   function makePageInert() {
     if (main) {
-      main.setAttribute('inert', '');
+      main.setAttribute("inert", "");
     }
     // if (footer) {
     //   footer.setAttribute("inert", "");
     // }
 
     for (let i = 0; i < siblings.length; i++) {
-      siblings[i].setAttribute('inert', 'true');
+      siblings[i].setAttribute("inert", "true");
     }
   }
 
   function removePageInert() {
     if (main) {
-      main.removeAttribute('inert');
+      main.removeAttribute("inert");
     }
     // if (footer) {
     // 	footer.removeAttribute("inert");
     // }
 
     for (let i = 0; i < siblings.length; i++) {
-      siblings[i].removeAttribute('inert');
+      siblings[i].removeAttribute("inert");
     }
   }
 
   function makeNavInert() {
-    navContent.setAttribute('inert', '');
+    navContent.setAttribute("inert", "");
   }
 
   function removeNavInert() {
-    navContent.removeAttribute('inert');
+    navContent.removeAttribute("inert");
   }
 
   function showNavigationContent() {
-    navButton.setAttribute('aria-expanded', 'true');
+    navButton.setAttribute("aria-expanded", "true");
     removeNavInert();
     makePageInert();
     navCloseBtn.focus();
