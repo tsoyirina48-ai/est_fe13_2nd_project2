@@ -18,7 +18,10 @@ export function renderHeader() {
             <a href="#"><i data-lucide="user-round"></i></a>
           </li>
           <li>
-            <a href="#"><i data-lucide="shopping-cart"></i></a>
+            <a href="#" class="pile"
+              ><i data-lucide="shopping-cart"></i
+              ><span class="cart__counter badge">1</span></a
+            >
           </li>
         </ul>
         <div class="site__nav__content" inert>
