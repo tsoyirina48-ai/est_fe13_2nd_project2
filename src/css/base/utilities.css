@@ -1,7 +1,7 @@
 /* Layout */
 .wrapper {
-  margin-inline: auto;
   max-width: 440px;
+  margin-inline: auto;
 }
 
 /* Typography */
@@ -84,4 +84,5 @@
 
 .badge {
   place-self: start end;
+  transform: translate(25%, -25%);
 }
