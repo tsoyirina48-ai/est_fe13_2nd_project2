@@ -55,7 +55,7 @@ docs: README 작성
 
 ## 코드 스타일
 
-Prettier와 ESLint 설정을 따릅니다.
+Biome 설정을 따릅니다. 저장 시 자동으로 포맷팅과 린트가 진행됩니다.
 
 ## CSS 네이밍
 
