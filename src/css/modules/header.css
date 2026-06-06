@@ -4,8 +4,8 @@
 
 .site__nav {
   display: flex;
-  align-items: center;
   gap: 18px;
+  align-items: center;
 }
 
 .site__nav__toggle,
@@ -41,28 +41,28 @@
   top: 0;
   bottom: 0;
   left: 0;
-  transform: translateX(-100%);
   z-index: 10;
-  transition:
-    transform 0.6s ease-out,
-    box-shadow 0.6s ease-out;
-  box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0);
-  background-color: var(--background);
   width: 75vw;
   max-width: 400px;
   overflow-y: auto;
+  background-color: var(--background);
+  box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+  transition:
+    transform 0.6s ease-out,
+    box-shadow 0.6s ease-out;
 }
 
 .site__nav__toggle[aria-expanded="true"] ~ .site__nav__content {
-  transform: translateX(0);
   box-shadow: 0 0 0 150vmax rgba(0, 0, 0, 0.75);
+  transform: translateX(0);
 }
 
 .cart__counter {
-  border-radius: 50%;
-  background-color: var(--accent);
   width: 14px;
   height: 14px;
   font-size: 10px;
   text-align: center;
+  background-color: var(--accent);
+  border-radius: 50%;
 }
