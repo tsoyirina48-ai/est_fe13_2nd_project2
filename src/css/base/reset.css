@@ -1,5 +1,11 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
-  font-family: system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-family:
+    system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 h1,
