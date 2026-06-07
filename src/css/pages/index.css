@@ -12,7 +12,7 @@
 }
 
 .info [aria-selected="true"] {
-  color: var(--chart-1);
+  color: var(--accent-foreground);
   text-decoration-thickness: 0.25em;
   text-underline-offset: 0.5em;
 }
