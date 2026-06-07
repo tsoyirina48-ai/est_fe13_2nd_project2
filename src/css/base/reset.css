@@ -1,3 +1,9 @@
 body {
   font-family: system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
