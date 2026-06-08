@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "../../css/pages/index.css";
+import { products } from "../../../data/products.json";
 import { renderTabs } from "../modules/tabs.js";
 
 const swiper = new Swiper(".swiper", {
@@ -30,9 +31,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 async function heroFetch() {
-  const response = await fetch("/est_fe13_2nd_project/data/products.json");
-  const { products } = await response.json();
-
   document.querySelector(".hero__image-1").src = products[1].thumbnail;
   document.querySelector(".hero__image-2").src = products[2].thumbnail;
   document.querySelector(".hero__image-3").src = products[3].thumbnail;
