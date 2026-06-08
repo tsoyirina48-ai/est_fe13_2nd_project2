@@ -12,7 +12,7 @@ export function renderHeader() {
           aria-label="메뉴 열기">
           <i data-lucide="menu"></i>
         </button>
-        <a href="/" class="site__nav__logo" id="site-nav-label">ROUNZ</a>
+        <a href="/est_fe13_2nd_project/" class="site__nav__logo" id="site-nav-label">ROUNZ</a>
         <ul class="site__nav__actions" role="list">
           <li>
             <a href="#"><i data-lucide="user-round"></i></a>
