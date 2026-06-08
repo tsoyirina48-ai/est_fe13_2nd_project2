@@ -30,7 +30,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 async function heroFetch() {
-  const response = await fetch("data/products.json");
+  const response = await fetch("/est_fe13_2nd_project/data/products.json");
   const { products } = await response.json();
 
   document.querySelector(".hero__image-1").src = products[1].thumbnail;
