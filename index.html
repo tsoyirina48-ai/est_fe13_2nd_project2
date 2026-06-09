@@ -24,13 +24,13 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="hero__image-1" src="" alt="">
+                <img class="hero__image-1" src="" alt="" loading="lazy">
               </div>
               <div class="swiper-slide">
-                <img class="hero__image-2" src="" alt="">
+                <img class="hero__image-2" src="" alt="" loading="lazy">
               </div>
               <div class="swiper-slide">
-                <img class="hero__image-3" src="" alt="">
+                <img class="hero__image-3" src="" alt="" loading="lazy">
               </div>
             </div>
             <!-- If we need pagination -->
@@ -79,7 +79,11 @@
           <h2 id="main-featured-heading">추천 컬렉션</h2>
         </div>
       </section>
-      <section class="main__brand" aria-labelledby="main-brand-heading">
+      <section
+        id="main-brand"
+        class="main__brand lazy"
+        aria-labelledby="main-brand-heading"
+      >
         <div class="wrapper">
           <h2 id="main-brand-heading">당신의 시선을 완성하다</h2>
           <p>라이프 스타일을 완성하는 프리미엄 안경</p>

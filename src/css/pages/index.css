@@ -50,6 +50,11 @@
   border-radius: 0.5rem;
 }
 
+#main-brand.lazy {
+  background-color: #f1f1fa;
+  background-image: none;
+}
+
 .main__brand {
   padding: 28px;
   background-image: url("/images/main-brand-bg.webp");
