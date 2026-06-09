@@ -4,13 +4,7 @@ export function renderTabs() {
   const tabButtons = tabsList.querySelectorAll(".tab__buttons");
   const tabPanels = tabsContainer.querySelectorAll(".tabs__panels > div");
 
-  tabsList.setAttribute("role", "tablist");
-  tabsList.querySelectorAll("li").forEach(listitem => {
-    listitem.setAttribute("role", "presentation");
-  });
-
   tabButtons.forEach((tab, index) => {
-    tab.setAttribute("role", "tab");
     if (index === 0) {
       tab.setAttribute("aria-selected", true);
     } else {
@@ -21,7 +15,6 @@ export function renderTabs() {
 
   tabPanels.forEach(panel => {
     panel.setAttribute("tabindex", "0");
-    panel.setAttribute("role", "tabpanel");
   });
 
   tabsContainer.addEventListener("click", e => {
