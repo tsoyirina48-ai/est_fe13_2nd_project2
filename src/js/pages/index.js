@@ -30,11 +30,4 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-async function heroFetch() {
-  document.querySelector(".hero__image-1").src = products[1].thumbnail;
-  document.querySelector(".hero__image-2").src = products[2].thumbnail;
-  document.querySelector(".hero__image-3").src = products[3].thumbnail;
-}
-
-heroFetch();
 renderTabs();

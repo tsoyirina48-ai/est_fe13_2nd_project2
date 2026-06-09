@@ -21,6 +21,7 @@ export function renderTabs() {
 
   tabPanels.forEach(panel => {
     panel.setAttribute("tabindex", "0");
+    panel.setAttribute("role", "tabpanel");
   });
 
   tabsContainer.addEventListener("click", e => {
