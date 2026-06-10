@@ -1,5 +1,5 @@
 import "modern-normalize";
-import "../css/style.css";
+import "../../css/style.css";
 import { renderHeader } from "../modules/header.js";
 
 renderHeader();
