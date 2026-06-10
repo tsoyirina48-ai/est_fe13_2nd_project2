@@ -24,10 +24,6 @@
   aspect-ratio: 1 / 1;
 }
 
-.swiper img {
-  aspect-ratio: 1 / 1;
-}
-
 .info [role="tablist"] {
   display: flex;
   gap: 1rem;
