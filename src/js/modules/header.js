@@ -54,6 +54,20 @@ function initNav() {
     false,
   );
 
+  document.addEventListener(
+    "keydown",
+    e => {
+      if (
+        navButton.getAttribute("aria-expanded") === "true" &&
+        e.key === "Escape"
+      ) {
+        hideNav();
+        navButton.focus();
+      }
+    },
+    false,
+  );
+
   navButton.addEventListener("click", showNavigationContent, false);
 
   function hideNav() {
