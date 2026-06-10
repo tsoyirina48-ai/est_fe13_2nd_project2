@@ -11,7 +11,8 @@ const page = document.body.dataset.page;
 switch (page) {
   case "main":
     import("./pages/index.js");
+    import("../css/pages/index.css");
     break;
   case "404":
-    import("./pages/404.js");
+    import("../css/pages/404.css");
 }
