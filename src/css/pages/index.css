@@ -6,12 +6,12 @@
   .hero {
     padding-block: 28px;
   }
-  .hero .wrapper {
+  .hero__wrapper {
     display: flex;
     align-items: center;
   }
 
-  .hero .wrapper > * {
+  .hero__wrapper > * {
     flex: 1;
   }
 
