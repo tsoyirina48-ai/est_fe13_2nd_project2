@@ -10,7 +10,7 @@ export function renderHeader() {
           class="site__nav__toggle"
           aria-expanded="false"
           aria-label="메뉴 열기">
-          <i data-lucide="menu" aria-hidden"true"></i>
+          <i data-lucide="menu" aria-hidden="true"></i>
         </button>
         <a href="/est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
         <ul class="site__nav__actions" role="list">
