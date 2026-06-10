@@ -21,13 +21,7 @@
 }
 
 .swiper {
-  max-width: 600px;
   aspect-ratio: 1 / 1;
-}
-
-.swiper img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
 }
 
 .info [role="tablist"] {
