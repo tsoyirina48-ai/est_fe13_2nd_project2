@@ -54,6 +54,17 @@ function initNav() {
     false,
   );
 
+  navContent.addEventListener(
+    "keydown",
+    e => {
+      if (e.key === "Escape") {
+        hideNav();
+        navButton.focus();
+      }
+    },
+    false,
+  );
+
   navButton.addEventListener("click", showNavigationContent, false);
 
   function hideNav() {
