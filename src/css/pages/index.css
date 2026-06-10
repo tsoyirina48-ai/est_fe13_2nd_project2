@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .hero {
     padding-block: 28px;
   }
