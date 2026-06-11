@@ -59,7 +59,6 @@ gantt
 ```
 src/
 ├── js/
-│   ├── main.js              # 전역 CSS 진입점
 │   ├── pages/
 │   └── modules/
 └── css/
