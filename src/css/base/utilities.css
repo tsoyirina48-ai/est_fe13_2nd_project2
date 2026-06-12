@@ -94,6 +94,26 @@
   transform: translate(25%, -25%);
 }
 
+.auto-grid {
+  --min-col-size: 200px;
+  --min-col-count: 1;
+  --gap-size: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        min(
+          var(--min-col-size),
+          (100% - (var(--min-col-count) - 1) * var(--gap-size)) /
+          var(--min-col-count)
+        ),
+        1fr
+      )
+    );
+  gap: var(--gap-size);
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   /* shrink to a 1px square */
