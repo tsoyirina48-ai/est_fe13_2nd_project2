@@ -4,7 +4,9 @@ body {
 }
 
 .hero__heading {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 75rem) {
@@ -21,13 +23,13 @@ body {
   }
 
   .hero__heading {
-    text-align: start;
+    align-items: start;
   }
 }
 
 .swiper {
-  --swiper-navigation-color: var(--primary);
-  --swiper-pagination-color: var(--primary);
+  --swiper-navigation-color: rgb(63 68 123);
+  --swiper-pagination-color: rgb(63 68 123);
   --swiper-pagination-bullet-inactive-color: var(--surface-container-higher);
   max-width: 600px;
   aspect-ratio: 1 / 1;
