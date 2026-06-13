@@ -1,8 +1,6 @@
 import "modern-normalize";
 import "../../css/style.css";
-import { events } from "../../../data/event.json";
-import { faqs } from "../../../data/faq.json";
-import { notices } from "../../../data/notice.json";
+
 import { renderHeader } from "../modules/header.js";
 
 renderHeader();
@@ -40,6 +38,10 @@ renderTabs();
 const noticeItemTemplate = document.querySelector("#main-notice-template");
 const eventItemTemplate = document.querySelector("#main-event-template");
 const faqItemTemplate = document.querySelector("#main-faq-template");
+
+import { events } from "../../../data/event.json";
+import { faqs } from "../../../data/faq.json";
+import { notices } from "../../../data/notice.json";
 
 function renderTabContent() {
   const noticeItemContainer = document.querySelector("#notice");
