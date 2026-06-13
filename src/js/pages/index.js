@@ -1,5 +1,8 @@
 import "modern-normalize";
 import "../../css/style.css";
+import { events } from "../../../data/event.json";
+import { faqs } from "../../../data/faq.json";
+import { notices } from "../../../data/notice.json";
 import { renderHeader } from "../modules/header.js";
 
 renderHeader();
@@ -33,3 +36,41 @@ const swiper = new Swiper(".swiper", {
 });
 
 renderTabs();
+
+const noticeItemTemplate = document.querySelector("#main-notice-template");
+const eventItemTemplate = document.querySelector("#main-event-template");
+const faqItemTemplate = document.querySelector("#main-faq-template");
+
+function renderTabContent() {
+  const noticeItemContainer = document.querySelector("#notice");
+  const eventItemContainer = document.querySelector("#event");
+  const faqItemContainer = document.querySelector("#faq");
+
+  notices.forEach(notice => {
+    const noticeItem = noticeItemTemplate.content.cloneNode(true);
+    noticeItem.querySelector(".tab__panel--notice__title").textContent =
+      notice.title;
+    noticeItem.querySelector(".tab__panel--notice__date").textContent =
+      notice.date;
+
+    noticeItemContainer.appendChild(noticeItem);
+  });
+
+  events.forEach(event => {
+    const eventItem = eventItemTemplate.content.cloneNode(true);
+    eventItem.querySelector(".tab__panel--event__title").textContent =
+      event.title;
+
+    eventItemContainer.appendChild(eventItem);
+  });
+
+  faqs.forEach(faq => {
+    const faqItem = faqItemTemplate.content.cloneNode(true);
+    faqItem.querySelector(".tab__panel--faq__question").textContent =
+      faq.question;
+
+    faqItemContainer.appendChild(faqItem);
+  });
+}
+
+renderTabContent();

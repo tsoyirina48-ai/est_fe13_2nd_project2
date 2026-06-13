@@ -79,14 +79,48 @@
               </li>
             </ul>
             <div class="tabs__panels">
-              <div id="notice" role="tabpanel" aria-labelledby="tab-1">
-                <h3>Lorem, ipsum.</h3>
+              <div
+                id="notice"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-1"
+              >
+                <template id="main-notice-template">
+                  <div class="main__notice__container">
+                    <h3 class="tab__panel--notice__title"></h3>
+                    <p class="tab__panel--notice__date"></p>
+                  </div>
+                </template>
               </div>
-              <div id="event" role="tabpanel" aria-labelledby="tab-2">
-                <h3>Lorem, ipsum dolor.</h3>
+              <div
+                id="event"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-2"
+              >
+                <template id="main-event-template">
+                  <details class="main__event__container">
+                    <summary>
+                      <h3 class="tab__panel--event__title"></h3>
+                    </summary>
+                    <p></p>
+                  </details>
+                </template>
               </div>
-              <div id="faq" role="tabpanel" aria-labelledby="tab-3">
-                <h3>Lorem ipsum dolor sit.</h3>
+              <div
+                id="faq"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-3"
+              >
+                <template id="main-faq-template">
+                  <details class="main__faq__container">
+                    <summary>
+                      <h3 class="tab__panel--faq__question"></h3>
+                    </summary>
+                    <p></p>
+                  </details>
+                </template>
               </div>
             </div>
           </div>

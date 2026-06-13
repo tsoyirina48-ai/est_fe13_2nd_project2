@@ -66,6 +66,15 @@ body {
   border-radius: 0.5rem;
 }
 
+.main__notice__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab__panel summary {
+  display: flex;
+}
+
 .main__featured .auto-grid {
   --min-col-size: calc(67.5rem / 6);
 }
