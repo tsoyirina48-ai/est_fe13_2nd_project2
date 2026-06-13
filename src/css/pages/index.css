@@ -88,6 +88,10 @@ body {
   --min-col-size: calc(67.5rem / 6);
 }
 
+.main_featured-card img {
+  aspect-ratio: 1 / 1;
+}
+
 .main__brand .wrapper {
   position: relative;
   padding: 28px;
