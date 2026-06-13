@@ -9,6 +9,10 @@ body {
   align-items: center;
 }
 
+.hero__heading h1 {
+  text-align: center;
+}
+
 @media (min-width: 75rem) {
   .hero {
     padding-block: 28px;

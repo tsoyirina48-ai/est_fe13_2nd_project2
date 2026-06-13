@@ -19,6 +19,7 @@ export function renderHeader() {
             <a href="/est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
           </li>
         </ul>
+        <label for="theme" class="visually-hidden">테마 선택기</label>
         <select id="theme">
           <option value="system" selected>시스템 모드</option>
           <option value="light">라이트 모드</option>
