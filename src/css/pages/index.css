@@ -86,6 +86,7 @@ body {
 
 .main__featured .auto-grid {
   --min-col-size: calc(67.5rem / 6);
+  --overflow-prevent: calc((100% - var(--gap-size)) / 2);
 }
 
 .main_featured-card img {

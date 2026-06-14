@@ -97,11 +97,12 @@
 .auto-grid {
   --min-col-size: 200px;
   --gap-size: 1rem;
+  --overflow-prevent: 100%;
 
   display: grid;
   grid-template-columns: repeat(
       auto-fit,
-      minmax(min(var(--min-col-size), 100%), 1fr)
+      minmax(min(var(--min-col-size), var(--overflow-prevent)), 1fr)
     );
   gap: var(--gap-size);
 }
