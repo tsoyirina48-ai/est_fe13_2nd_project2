@@ -6,6 +6,18 @@
   border-bottom: 1px solid var(--primary);
 }
 
+.skip-link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2em;
+  margin: auto;
+  color: var(--on-surface);
+  background-color: var(--surface-container);
+}
+
 .site__nav {
   display: grid;
   grid-template-columns: 1fr auto 1fr;

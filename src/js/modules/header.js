@@ -5,6 +5,7 @@ const siteHeader = document.querySelector(".site__header");
 export function renderHeader() {
   siteHeader.innerHTML = /* HTML */ `
     <div class="wrapper">
+      <a href="#content" class="skip-link visually-hidden">컨텐츠로 바로가기</a>
       <nav class="site__nav" aria-labelledby="site-nav-label">
         <ul class="site__nav__main">
           <li>
