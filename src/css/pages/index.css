@@ -91,6 +91,20 @@ body {
   justify-content: space-between;
 }
 
+.main__category__grid {
+  --overflow-prevent: calc((100% - var(--gap-size) * 3) / 2);
+}
+
+.main__category__item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1rem;
+  background-color: var(--surface-container);
+  border-radius: 0.5rem;
+}
+
 .main__featured .auto-grid {
   --min-col-size: calc(67.5rem / 6);
   --overflow-prevent: calc((100% - var(--gap-size)) / 2);
