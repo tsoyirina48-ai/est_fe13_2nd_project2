@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>est_fe13_2st_project</title>
+    <title>ROUNZ — 세상을 다르게 보는 방법</title>
     <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
     <link rel="icon" href="/favicon.ico" sizes="any">
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/pages/index.js"></script>
   </head>
-  <body data-page="main">
+  <body>
     <header class="site__header"></header>
-    <main>
+    <main id="content">
       <section class="hero" aria-labelledby="hero-heading">
-        <div class="wrapper">
+        <div class="wrapper hero__wrapper">
           <div class="hero__heading">
             <h1 id="hero-heading" class="text-headline-medium">
               ROUNZ — 세상을 다르게 보는 방법
@@ -25,19 +25,33 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="hero__image-1" src="" alt="" fetchpriority="high">
+                <img
+                  class="hero__image-1"
+                  src="/images/2.webp"
+                  alt=""
+                  fetchpriority="high"
+                >
               </div>
               <div class="swiper-slide">
-                <img class="hero__image-2" src="" alt="" loading="lazy">
+                <img
+                  class="hero__image-2"
+                  src="/images/3.webp"
+                  alt=""
+                  loading="lazy"
+                >
               </div>
               <div class="swiper-slide">
-                <img class="hero__image-3" src="" alt="" loading="lazy">
+                <img
+                  class="hero__image-3"
+                  src="/images/4.webp"
+                  alt=""
+                  loading="lazy"
+                >
               </div>
             </div>
-            <!-- If we need pagination -->
+
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
@@ -47,24 +61,75 @@
         <div class="wrapper">
           <h2 id="info-heading">안내</h2>
           <div class="tabs__container">
-            <ul class="tabs__list">
-              <li>
-                <a id="tab-1" href="#notice" class="tab__buttons">공지</a>
+            <ul class="tabs__list" role="tablist">
+              <li role="presentation">
+                <a id="tab-1" href="#notice" class="tab__buttons" role="tab"
+                  >공지</a
+                >
               </li>
-              <li>
-                <a id="tab-2" href="#event" class="tab__buttons">이벤트</a>
+              <li role="presentation">
+                <a id="tab-2" href="#event" class="tab__buttons" role="tab"
+                  >이벤트</a
+                >
               </li>
-              <li><a id="tab-3" href="#faq" class="tab__buttons">FAQ</a></li>
+              <li role="presentation">
+                <a id="tab-3" href="#faq" class="tab__buttons" role="tab"
+                  >FAQ</a
+                >
+              </li>
             </ul>
             <div class="tabs__panels">
-              <div id="notice" aria-labelledby="tab-1">
-                <h3>Lorem, ipsum.</h3>
+              <div
+                id="notice"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-1"
+              >
+                <template id="main-notice-template">
+                  <div class="tab__notict__item">
+                    <div class="main__notice__container">
+                      <span class="tab__panel--notice__title"
+                        ><span class="skeleton skeleton-text"></span></span
+                      >
+                      <span class="tab__panel--notice__date"
+                        ><span class="skeleton skeleton-text"></span></span
+                      >
+                    </div>
+                  </div>
+                </template>
+                <div class="skeleton-grid">
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text"></div>
+                </div>
               </div>
-              <div id="event" aria-labelledby="tab-2">
-                <h3>Lorem, ipsum dolor.</h3>
+              <div
+                id="event"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-2"
+              >
+                <template id="main-event-template">
+                  <details class="main__event__container">
+                    <summary class="tab__panel--event__title"></summary>
+                    <p class="tab__panel--event__description"></p>
+                  </details>
+                </template>
               </div>
-              <div id="faq" aria-labelledby="tab-3">
-                <h3>Lorem ipsum dolor sit.</h3>
+              <div
+                id="faq"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-3"
+              >
+                <template id="main-faq-template">
+                  <details class="main__faq__container">
+                    <summary class="tab__panel--faq__question"></summary>
+                    <p class="tab__panel--faq__answer"></p>
+                  </details>
+                </template>
               </div>
             </div>
           </div>
@@ -78,16 +143,106 @@
       <section class="main__featured" aria-labelledby="main-featured-heading">
         <div class="wrapper">
           <h2 id="main-featured-heading">추천 컬렉션</h2>
+          <div class="auto-grid">
+            <template id="main-featured-template">
+              <div class="main_featured-card">
+                <img src="" alt="">
+                <div class="main__featured-card-content">
+                  <p class="main__featured-brand"></p>
+                  <h3 class="main__featured-title"></h3>
+                  <p class="main__featured-price"></p>
+                </div>
+              </div>
+            </template>
+            <div class="main_featured-card">
+              <img
+                src="/images/5.webp"
+                alt="블리츠 고글 브리즈 선글라스 BZ52102 BZS52102 4종 택1"
+                loading="lazy"
+              >
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">
+                  블리츠 고글 브리즈 선글라스 BZ52102 BZS52102 4종 택1
+                </h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+            <div class="main_featured-card">
+              <img
+                src="/images/2.webp"
+                alt="실버 메탈 RB3774D 003/87 55mm 레이밴 선글라스"
+                loading="lazy"
+              >
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">
+                  실버 메탈 RB3774D 003/87 55mm 레이밴 선글라스
+                </h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+            <div class="main_featured-card">
+              <img
+                src="/images/44.webp"
+                alt="오클리 수트로 스포츠 고글 선글라스 OO9406A-04"
+                loading="lazy"
+              >
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">
+                  오클리 수트로 스포츠 고글 선글라스 OO9406A-04
+                </h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+            <div class="main_featured-card">
+              <img
+                src="/images/35.webp"
+                alt="블랙 LURE C1 55mm 퍼블릭비컨 루어 선글라스"
+                loading="lazy"
+              >
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">
+                  블랙 LURE C1 55mm 퍼블릭비컨 루어 선글라스
+                </h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+            <div class="main_featured-card">
+              <img
+                src="/images/24.webp"
+                alt="프라다 선글라스 아시안핏 SPR17WF/SPR26ZF 5종 택1"
+                loading="lazy"
+              >
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">
+                  프라다 선글라스 아시안핏 SPR17WF/SPR26ZF 5종 택1
+                </h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+            <div class="main_featured-card">
+              <img src="/images/51.webp" alt="NK762 C1" loading="lazy">
+              <div class="main__featured-card-content">
+                <p class="main__featured-brand"></p>
+                <h3 class="main__featured-title">NK762 C1</h3>
+                <p class="main__featured-price"></p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__brand" aria-labelledby="main-brand-heading">
-        <img
-          src="/images/main-brand-bg.webp"
-          alt=""
-          loading="lazy"
-          srcset="/images/main-brand-bg-480.webp 480w, /images/main-brand-bg-768.webp 768w"
-        >
         <div class="wrapper">
+          <img
+            src="/images/main-brand-bg.webp"
+            alt=""
+            loading="lazy"
+            srcset="/images/main-brand-bg-480.webp 480w, /images/main-brand-bg-768.webp 768w, /images/main-brand-bg.webp 1200w"
+          >
           <h2 id="main-brand-heading">당신의 시선을 완성하다</h2>
           <p>라이프 스타일을 완성하는 프리미엄 안경</p>
           <button type="button">지금 바로 시작하기</button>
@@ -96,6 +251,54 @@
       <section class="main__review" aria-labelledby="main-review-heading">
         <div class="wrapper">
           <h2 id="main-review-heading">후기</h2>
+          <div class="auto-grid">
+            <div class="main__review-card">
+              <img
+                src="/images/avatars/review1.webp"
+                alt="clumsy7206 프로필 이미지"
+                loading="lazy"
+              >
+              <p>
+                안경 도수도 처음이고 뭘 골라야 할지 몰랐는데, 상담 덕분에
+                얼굴형에 맞는 프레임을 추천받았어요. 렌즈 코팅도 꼼꼼하게
+                설명해주셔서 블루라이트 차단 옵션으로 선택했는데 하루 종일
+                컴퓨터 앞에 앉아 있어도 눈이 훨씬 덜 피로하네요. 배송도 빠르고
+                케이스까지 예뻐서 선물받은 기분이었어요. 다음엔 선글라스도
+                여기서 맞춰볼 생각입니다!
+              </p>
+              <p>- clumsy7206</p>
+            </div>
+            <div class="main__review-card">
+              <img
+                src="/images/avatars/review2.webp"
+                alt=" lushness2226프로필 이미지"
+                loading="lazy"
+              >
+              <p>
+                처음엔 좀 불안했는데 정밀 검안 결과지 그대로 넣어주시고 PD
+                측정도 앱으로 간편하게 해서 딱 맞게 제작해 주셨어요. 얇고 가벼운
+                티타늄 프레임인데 착용감도 좋고 마감도 고급스럽습니다. 주변
+                친구들한테 이미 여러 명 추천했어요.
+              </p>
+              <p>- lushness2226</p>
+            </div>
+            <div class="main__review-card">
+              <img
+                src="/images/avatars/review3.webp"
+                alt="sprung9113 프로필 이미지"
+                loading="lazy"
+              >
+              <p>
+                안경테 고르는 게 항상 어려웠는데, 여기는 얼굴형·피부톤별 추천
+                필터가 있어서 고민을 확 줄여줬어요. 빈티지 라운드 프레임
+                골랐는데 사진보다 실물이 훨씬 예쁘고 컬러도 딱 원하던 올리브
+                골드예요. 코 패드 조절도 세심하게 맞춰져서 흘러내림 없이 하루
+                종일 편하게 쓸 수 있어요. 패키징도 감성적으로 잘 돼 있어서
+                언박싱할 때 기분이 좋았습니다. 매년 여기서 맞출 것 같아요
+              </p>
+              <p>- sprung9113</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__cta" aria-labelledby="main-cta-heading">

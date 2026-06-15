@@ -4,13 +4,7 @@ export function renderTabs() {
   const tabButtons = tabsList.querySelectorAll(".tab__buttons");
   const tabPanels = tabsContainer.querySelectorAll(".tabs__panels > div");
 
-  tabsList.setAttribute("role", "tablist");
-  tabsList.querySelectorAll("li").forEach(listitem => {
-    listitem.setAttribute("role", "presentation");
-  });
-
   tabButtons.forEach((tab, index) => {
-    tab.setAttribute("role", "tab");
     if (index === 0) {
       tab.setAttribute("aria-selected", true);
     } else {
@@ -30,23 +24,27 @@ export function renderTabs() {
     switchTab(clickedTab);
   });
 
-  tabsContainer.addEventListener("keydown", e => {
-    switch (e.key) {
-      case "ArrowLeft":
-        moveLeft();
-        break;
-      case "ArrowRight":
-        moveRight();
-        break;
-      case "Home":
-        e.preventDefault();
-        switchTab(tabButtons[0]);
-        break;
-      case "End":
-        e.preventDefault();
-        switchTab(tabButtons[tabButtons.length - 1]);
-        break;
-    }
+  tabButtons.forEach(tabButton => {
+    tabButton.addEventListener("keydown", e => {
+      switch (e.key) {
+        case "ArrowLeft":
+          e.preventDefault();
+          moveLeft();
+          break;
+        case "ArrowRight":
+          e.preventDefault();
+          moveRight();
+          break;
+        case "Home":
+          e.preventDefault();
+          switchTab(tabButtons[0]);
+          break;
+        case "End":
+          e.preventDefault();
+          switchTab(tabButtons[tabButtons.length - 1]);
+          break;
+      }
+    });
   });
 
   function moveLeft() {
@@ -79,7 +77,6 @@ export function renderTabs() {
     });
 
     tabPanels.forEach(panel => {
-      panel.setAttribute("role", "tabpanel");
       panel.setAttribute("hidden", "");
     });
     activePanel.removeAttribute("hidden");
