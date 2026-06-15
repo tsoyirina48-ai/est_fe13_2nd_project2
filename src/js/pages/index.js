@@ -85,3 +85,5 @@ function renderTabContent() {
 }
 
 renderTabContent();
+
+import "../../js/modules/footer.js";
