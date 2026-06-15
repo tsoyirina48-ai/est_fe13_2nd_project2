@@ -6,6 +6,124 @@
     <title>ROUNZ — 세상을 다르게 보는 방법</title>
     <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
     <link rel="icon" href="/favicon.ico" sizes="any">
+    <script type="module" src="./src/js/pages/productList.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="site__header"></header>
+
+    <main id="content">
+      <section class="product-intro">
+        <p class="text-title-large">Our Collection</p>
+        <p class="text-body-medium text-opacity">
+          Discover 10 premium eyewear options
+        </p>
+      </section>
+      <button type="button" class="filter-button text-display-small">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="44"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-funnel-icon lucide-funnel"
+        >
+          <path
+            d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"
+          />
+        </svg>Filter
+      </button>
+
+      <div class="grid">
+        <!-- RAY-BAN Classic Aviator -->
+        <article class="product-card">
+          <div class="product-card__image-container">
+            <img
+              class="product-card__image"
+              src="/images/1.webp"
+              alt="RAY-BAN Classic Aviator"
+              loading="lazy"
+            >
+            <span class="product-card__badge">BEST</span>
+          </div>
+          <div class="product-card__content">
+            <p class="product-card__brand">RAY-BAN</p>
+            <h3 class="product-card__title">Classic Aviator</h3>
+            <div class="product-card__tags">
+              <span class="product-card__tag">Aviator</span>
+              <span class="product-card__tag">Black</span>
+            </div>
+            <div class="product-card__rating" aria-label="별점 5점 만점에 4점">
+              <svg
+                class="product-card__star product-card__star--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                class="product-card__star product-card__star--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                class="product-card__star product-card__star--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                class="product-card__star product-card__star--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                class="product-card__star product-card__star--empty"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="product-card__price">₩320,000</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site__footer"></footer>
+  </body>
 </html>
