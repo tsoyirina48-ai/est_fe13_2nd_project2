@@ -82,6 +82,35 @@ function renderTabContent() {
   });
 }
 
+import { products } from "../../../data/products.json";
+
 renderTabContent();
+
+function renderFetured() {
+  const featuredItemTemplate = document.querySelector(
+    "#main-featured-template",
+  );
+  const featuredContainer = document.querySelector(".main__featured-container");
+
+  const featuredProducts = products.filter(p => p.featured);
+
+  featuredProducts.forEach(featuredProduct => {
+    const featuredItem = featuredItemTemplate.content.cloneNode(true);
+
+    featuredItem.querySelector(".main__featured-image").src =
+      featuredProduct.thumbnail;
+    featuredItem.querySelector(".main__featured-image").alt =
+      featuredProduct.title;
+    featuredItem.querySelector(".main__featured-brand").textContent =
+      featuredProduct.brand;
+    featuredItem.querySelector(".main__featured-title").textContent =
+      featuredProduct.title;
+    featuredItem.querySelector(".main__featured-price").textContent =
+      `${featuredProduct.price}₩`;
+
+    featuredContainer.appendChild(featuredItem);
+  });
+}
+renderFetured();
 
 import "../../js/modules/footer.js";

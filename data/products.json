@@ -16,7 +16,8 @@
       "price": 239000,
       "category": "eyewear",
       "thumbnail": "images/2.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3024878"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3024878",
+      "featured": true
     },
     {
       "id": 3,
@@ -31,7 +32,7 @@
       "id": 4,
       "brand": "RAY-BAN",
       "title": "블랙 캣아이 RB2289 901/31 63mm 레이밴 메가 발로라마 선글라스",
-      "price": 20217600,
+      "price": 269000,
       "category": "eyewear",
       "thumbnail": "images/4.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3023318"
@@ -40,16 +41,17 @@
       "id": 5,
       "brand": "BLIZ",
       "title": "블리츠 고글 브리즈 선글라스 BZ52102 BZS52102 4종 택1",
-      "price": 6190000,
+      "price": 230000,
       "category": "eyewear",
       "thumbnail": "images/5.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3005613"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3005613",
+      "featured": true
     },
     {
       "id": 6,
       "brand": "BLIZ",
       "title": "블리츠 고글 브리즈 노르딕 선글라스 BZ52102-13N",
-      "price": 6190000,
+      "price": 219000,
       "category": "eyewear",
       "thumbnail": "images/6.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005421"
@@ -58,7 +60,7 @@
       "id": 7,
       "brand": "BLIZ",
       "title": "블리츠 브리즈 전용 클리어 렌즈 BZ52102-L0",
-      "price": 5920000,
+      "price": 89000,
       "category": "eyewear",
       "thumbnail": "images/7.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005584"
@@ -94,7 +96,7 @@
       "id": 11,
       "brand": "PUBLIC BEACON",
       "title": "BIRKIN2 C2 54mm 퍼블릭비컨 버킨2 선글라스",
-      "price": 10175500,
+      "price": 178000,
       "category": "eyewear",
       "thumbnail": "images/11.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005640"
@@ -103,7 +105,7 @@
       "id": 12,
       "brand": "PUBLIC BEACON",
       "title": "투명 BIRKIN2 C4 54mm 퍼블릭비컨 버킨2 투명 선글라스",
-      "price": 10175500,
+      "price": 178000,
       "category": "eyewear",
       "thumbnail": "images/12.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005641"
@@ -112,7 +114,7 @@
       "id": 13,
       "brand": "PUBLIC BEACON",
       "title": "WILLOW C1 50mm 퍼블릭비컨 윌로우 선글라스",
-      "price": 10175500,
+      "price": 178000,
       "category": "eyewear",
       "thumbnail": "images/13.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005642"
@@ -121,7 +123,7 @@
       "id": 14,
       "brand": "MUSEUM BY BEACON",
       "title": "MUSEUM1 CLIP C2 뮤지엄바이비컨 뮤지엄1 클립",
-      "price": 1043200,
+      "price": 104000,
       "category": "eyewear",
       "thumbnail": "images/14.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005728"
@@ -130,7 +132,7 @@
       "id": 15,
       "brand": "MUSEUM BY BEACON",
       "title": "MUSEUM1 CLIP C1 뮤지엄바이비컨 뮤지엄1 클립",
-      "price": 1043200,
+      "price": 104000,
       "category": "eyewear",
       "thumbnail": "images/15.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005729"
@@ -139,7 +141,7 @@
       "id": 16,
       "brand": "MUSEUM BY BEACON",
       "title": "레드 하바나 MUSEUM S2 C3 50mm 뮤지엄바이비컨 뮤지엄 선글라스",
-      "price": 10178200,
+      "price": 178000,
       "category": "eyewear",
       "thumbnail": "images/16.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3010244"
@@ -175,7 +177,7 @@
       "id": 20,
       "brand": "RUDY PROJECT",
       "title": "루디 프로젝트 컷라인 선글라스 SP630969-0005",
-      "price": 10288000,
+      "price": 288000,
       "category": "eyewear",
       "thumbnail": "images/20.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3002940"
@@ -184,7 +186,7 @@
       "id": 21,
       "brand": "RUDY PROJECT",
       "title": "루디 프로젝트 컷라인 변색 고글 선글라스 SP637569-0008",
-      "price": 10378000,
+      "price": 378000,
       "category": "eyewear",
       "thumbnail": "images/21.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3004107"
@@ -193,7 +195,7 @@
       "id": 22,
       "brand": "RUDY PROJECT",
       "title": "루디 프로젝트 스핀에어 57 심플 미러 편광 선글라스 SP576206-0000",
-      "price": 10306000,
+      "price": 306000,
       "category": "eyewear",
       "thumbnail": "images/22.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005545"
@@ -202,7 +204,7 @@
       "id": 23,
       "brand": "OAKLEY",
       "title": "오클리 아이자켓 리덕스 선글라스 OO9438 5종 택1",
-      "price": 20195200,
+      "price": 195000,
       "category": "eyewear",
       "thumbnail": "images/23.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3016693"
@@ -211,16 +213,17 @@
       "id": 24,
       "brand": "PRADA",
       "title": "프라다 선글라스 아시안핏 SPR17WF/SPR26ZF 5종 택1",
-      "price": 20472000,
+      "price": 590000,
       "category": "eyewear",
       "thumbnail": "images/24.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3019193"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3019193",
+      "featured": true
     },
     {
       "id": 25,
       "brand": "LE SPECS",
       "title": "르스펙스 선글라스 아우타러브 워크잇 언리얼 필퍼러 8종 택1",
-      "price": 2091000,
+      "price": 91000,
       "category": "eyewear",
       "thumbnail": "images/25.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3016108"
@@ -229,7 +232,7 @@
       "id": 26,
       "brand": "STYLE:WORK",
       "title": "블랙 STYLE WORK TR90-08 C1 스타일워크 오벌 선글라스",
-      "price": 2069000,
+      "price": 69000,
       "category": "eyewear",
       "thumbnail": "images/26.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3018813"
@@ -238,7 +241,7 @@
       "id": 27,
       "brand": "RAY-BAN",
       "title": "[파우치증정] 레이밴 선글라스 RB4258F 601/71 RB4258-F",
-      "price": 20191200,
+      "price": 191000,
       "category": "eyewear",
       "thumbnail": "images/27.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=179726"
@@ -247,7 +250,7 @@
       "id": 28,
       "brand": "ROUNZ BASIC",
       "title": "라운즈베이직 1+1 플랫바/오벌 선글라스",
-      "price": 4245000,
+      "price": 45000,
       "category": "eyewear",
       "thumbnail": "images/28.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3025651"
@@ -256,7 +259,7 @@
       "id": 29,
       "brand": "VEDI VERO",
       "title": "블랙&매트블랙 메탈 VVD39 MBLK 베디베로 제노바 선글라스",
-      "price": 6599000,
+      "price": 259000,
       "category": "eyewear",
       "thumbnail": "images/29.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3015164"
@@ -265,7 +268,7 @@
       "id": 30,
       "brand": "OAKLEY",
       "title": "매트 블랙 OO9438-01 오클리 아이자켓 리덕스 선글라스",
-      "price": 20208800,
+      "price": 209000,
       "category": "eyewear",
       "thumbnail": "images/30.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3011529"
@@ -310,16 +313,17 @@
       "id": 35,
       "brand": "PUBLIC BEACON",
       "title": "블랙 LURE C1 55mm 퍼블릭비컨 루어 선글라스",
-      "price": 10178200,
+      "price": 198000,
       "category": "eyewear",
       "thumbnail": "images/35.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3011634"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3011634",
+      "featured": true
     },
     {
       "id": 36,
       "brand": "PUBLIC BEACON",
       "title": "블랙 PEARL C1 54mm 퍼블릭비컨 펄 선글라스",
-      "price": 10202500,
+      "price": 202000,
       "category": "eyewear",
       "thumbnail": "images/36.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3010318"
@@ -328,7 +332,7 @@
       "id": 37,
       "brand": "NINE ACCORD",
       "title": "HORN XO C1 55mm 나인어코드 혼 엑스오 선글라스",
-      "price": 5223250,
+      "price": 223000,
       "category": "eyewear",
       "thumbnail": "images/37.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3011404"
@@ -337,7 +341,7 @@
       "id": 38,
       "brand": "NINE ACCORD",
       "title": "HORN NERO C1 64mm 나인어코드 혼 네로 선글라스",
-      "price": 5182400,
+      "price": 182000,
       "category": "eyewear",
       "thumbnail": "images/38.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3007421"
@@ -346,7 +350,7 @@
       "id": 39,
       "brand": "NINE ACCORD",
       "title": "틴트 HORN LIME C5 53mm 나인어코드 혼 라임 선글라스",
-      "price": 5199500,
+      "price": 199000,
       "category": "eyewear",
       "thumbnail": "images/39.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3009133"
@@ -355,7 +359,7 @@
       "id": 40,
       "brand": "NINE ACCORD",
       "title": "반투명 HORN LIME C4 53mm 나인어코드 혼 라임 선글라스",
-      "price": 5199500,
+      "price": 199000,
       "category": "eyewear",
       "thumbnail": "images/40.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3009132"
@@ -364,7 +368,7 @@
       "id": 41,
       "brand": "RAY-BAN",
       "title": "레이밴 라운드 메탈 선글라스 RB3447 001 (50,53 사이즈)",
-      "price": 20204800,
+      "price": 205000,
       "category": "eyewear",
       "thumbnail": "images/41.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=2565766"
@@ -373,7 +377,7 @@
       "id": 42,
       "brand": "OAKLEY",
       "title": "오클리 홀브룩 XL 선글라스 편광 프리즘 OO9417-08",
-      "price": 20273600,
+      "price": 274000,
       "category": "eyewear",
       "thumbnail": "images/42.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=2568460"
@@ -382,7 +386,7 @@
       "id": 43,
       "brand": "OAKLEY",
       "title": "오클리 수트로 스포츠 고글 선글라스 OO9406A-03",
-      "price": 20229600,
+      "price": 230000,
       "category": "eyewear",
       "thumbnail": "images/43.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3000755"
@@ -391,10 +395,11 @@
       "id": 44,
       "brand": "OAKLEY",
       "title": "오클리 수트로 스포츠 고글 선글라스 OO9406A-04",
-      "price": 20229600,
+      "price": 2870000,
       "category": "eyewear",
       "thumbnail": "images/44.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3000756"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3000756",
+      "featured": true
     },
     {
       "id": 45,
@@ -436,7 +441,7 @@
       "id": 49,
       "brand": "LE SPECS",
       "title": "OUTTA LOVE 2452364 르스펙스 아우타러브 선글라스",
-      "price": 2091000,
+      "price": 91000,
       "category": "eyewear",
       "thumbnail": "images/49.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3015282"
@@ -445,7 +450,7 @@
       "id": 50,
       "brand": "NINE ACCORD",
       "title": "TI FRANG R C6(50)",
-      "price": 5204250,
+      "price": 304000,
       "category": "eyewear",
       "thumbnail": "images/50.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3017014"
@@ -457,13 +462,14 @@
       "price": 490000,
       "category": "eyewear",
       "thumbnail": "images/51.webp",
-      "sourceUrl": "https://rounz.com/product.php?productIndex=3016990"
+      "sourceUrl": "https://rounz.com/product.php?productIndex=3016990",
+      "featured": true
     },
     {
       "id": 52,
       "brand": "NINE ACCORD",
       "title": "TI FRANG R C1(50)",
-      "price": 5204250,
+      "price": 304000,
       "category": "eyewear",
       "thumbnail": "images/52.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3017013"
