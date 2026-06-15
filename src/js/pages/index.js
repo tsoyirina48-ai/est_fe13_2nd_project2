@@ -1,9 +1,7 @@
 import "modern-normalize";
 import "../../css/style.css";
 
-import { renderHeader } from "../modules/header.js";
-
-renderHeader();
+import "../modules/header.js";
 
 import Swiper from "swiper";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
