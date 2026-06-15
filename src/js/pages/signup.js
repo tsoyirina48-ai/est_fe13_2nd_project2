@@ -1,3 +1,7 @@
+import { renderHeader } from '../modules/header.js';
+
+renderHeader();
+
 const form = document.querySelector(".signup-form");
 
 form?.addEventListener("submit", (event) => {

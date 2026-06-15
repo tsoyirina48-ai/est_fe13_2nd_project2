@@ -1,3 +1,6 @@
+import { renderHeader } from '../modules/header.js';
+
+renderHeader();
 const form = document.querySelector(".login-form");
 
 form?.addEventListener("submit", (event) => {

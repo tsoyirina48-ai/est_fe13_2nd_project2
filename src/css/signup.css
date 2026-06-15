@@ -44,7 +44,7 @@
 .signup-btn {
   width: 100%;
   height: 48px;
-  color: var(--primary-foreground);
+  color: var(--on-primary);
   cursor: pointer;
 
   background: var(--primary);
