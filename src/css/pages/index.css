@@ -92,9 +92,7 @@ body {
 }
 
 .main__category__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  --overflow-prevent: calc((100% - var(--gap-size) * 3) / 2);
 }
 
 .main__category__item {
