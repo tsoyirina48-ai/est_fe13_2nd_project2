@@ -16,6 +16,7 @@ main > section {
   align-items: start;
   width: 60%;
   color: black;
+  background: linear-gradient(white, white, transparent 0);
   transform: translateX(10%);
 }
 
@@ -154,7 +155,12 @@ main > section {
 }
 
 .main__brand {
-  color: black;
+  color: var(--on-background);
+  background: linear-gradient(
+    var(--background),
+    var(--background),
+    transparent 0
+  );
 }
 
 .main__brand .wrapper {
@@ -182,9 +188,9 @@ main > section {
 .main__brand a {
   width: fit-content;
   padding: 11px 22px;
-  color: black;
+  color: var(--on-background);
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid var(--on-background);
   border-radius: 0.5rem;
 }
 
