@@ -46,10 +46,10 @@ function renderTabContent() {
   const eventItemContainer = document.querySelector("#event");
   const faqItemContainer = document.querySelector("#faq");
 
-  const skeletonGrid = document.querySelector(".skeleton-grid");
-  skeletonGrid.innerHTML = "";
+  const skeletonItem = noticeItemContainer.querySelectorAll(".skeleton");
+  // skeletonGrid.innerHTML = "";
 
-  notices.forEach(notice => {
+  notices.forEach((notice, i) => {
     const noticeItem = noticeItemTemplate.content.cloneNode(true);
 
     noticeItem.querySelector(".tab__panel--notice__title").textContent =
@@ -57,7 +57,7 @@ function renderTabContent() {
     noticeItem.querySelector(".tab__panel--notice__date").textContent =
       notice.date;
 
-    noticeItemContainer.appendChild(noticeItem);
+    skeletonItem[i].replaceWith(noticeItem);
   });
 
   events.forEach(event => {
@@ -92,11 +92,12 @@ function renderFetured() {
   );
   const featuredContainer = document.querySelector(".main__featured-container");
 
-  const featuredProducts = products.filter(p => p.featured);
+  const featuredProducts = products.slice(0, 6);
 
-  featuredProducts.forEach(featuredProduct => {
+  const skeletonCards = featuredContainer.querySelectorAll(".skeleton-card");
+
+  featuredProducts.forEach((featuredProduct, index) => {
     const featuredItem = featuredItemTemplate.content.cloneNode(true);
-
     featuredItem.querySelector(".main__featured-image").src =
       featuredProduct.thumbnail;
     featuredItem.querySelector(".main__featured-image").alt =
@@ -106,9 +107,9 @@ function renderFetured() {
     featuredItem.querySelector(".main__featured-title").textContent =
       featuredProduct.title;
     featuredItem.querySelector(".main__featured-price").textContent =
-      `${featuredProduct.price}₩`;
+      `₩${featuredProduct.price}`;
 
-    featuredContainer.appendChild(featuredItem);
+    skeletonCards[index].replaceWith(featuredItem);
   });
 }
 renderFetured();
