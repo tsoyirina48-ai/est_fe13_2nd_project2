@@ -28,13 +28,11 @@
               <div class="swiper-slide">
                 <img
                   class="hero__image-1"
+                  sizes="(max-width:480px) 480px, (max-width:768px) 768px, (max-width:1200px) 1200px"
                   src="/images/hero/hero1.webp"
                   alt=""
-                  width="1200"
-                  height="675"
                   srcset="/images/hero/hero1-480.webp 480w, /images/hero/hero1-768.webp 768w, /images/hero/hero1.webp 1200w"
                   fetchpriority="high"
-                  decoding="async"
                 >
               </div>
               <div class="swiper-slide">
@@ -337,7 +335,7 @@
       </section>
       <section class="main__review" aria-labelledby="main-review-heading">
         <div class="wrapper">
-          <h2 id="main-review-heading text-headline-small">후기</h2>
+          <h2 id="main-review-heading" class="text-headline-small">후기</h2>
           <div class="auto-grid">
             <div class="main__review-card">
               <img
