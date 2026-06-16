@@ -12,7 +12,6 @@
       "color": "Silver",
       "badge": "NEW",
       "sale_rate": 0
-      "featured": true
     },
     {
       "id": 2,
@@ -52,7 +51,6 @@
       "color": "",
       "badge": "BEST",
       "sale_rate": 0
-      "featured": true
     },
     {
       "id": 5,
@@ -300,7 +298,6 @@
       "color": "",
       "badge": "SALE",
       "sale_rate": 20
-      "featured": true
     },
     {
       "id": 24,
@@ -444,7 +441,6 @@
       "color": "Black",
       "badge": "NEW",
       "sale_rate": 0
-      "featured": true
     },
     {
       "id": 35,
@@ -562,7 +558,6 @@
       "color": "",
       "badge": "NEW",
       "sale_rate": 0
-      "featured": true
     },
     {
       "id": 44,
@@ -654,7 +649,6 @@
       "color": "",
       "badge": "SALE",
       "sale_rate": 50
-      "featured": true
     },
     {
       "id": 51,
