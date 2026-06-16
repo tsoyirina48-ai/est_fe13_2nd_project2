@@ -1,0 +1,27 @@
+body {
+  color: var(--on-background);
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+.detail_category {
+  display: flex;
+  gap: var(--base-unit);
+  align-items: center;
+  justify-content: left;
+}
+
+.detail_product {
+  display: flex;
+  gap: var(--base-unit);
+}
+.detail_product > div {
+  width: 50%;
+}
+.product-thumbnails {
+  display: flex;
+  width: 20%;
+}
