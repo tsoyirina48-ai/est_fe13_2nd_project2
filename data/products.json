@@ -8,10 +8,11 @@
       "category": "eyewear",
       "thumbnail": "images/2.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3024878",
-      "rating": 4.0,
+      "rating": 4,
       "color": "Silver",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min2.webp"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "rating": 3.5,
       "color": "Black",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min3.webp"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "rating": 3.5,
       "color": "Black",
       "badge": "SALE",
-      "sale_rate": 30
+      "sale_rate": 30,
+      "thumbnailMin": "images/min-products/min4.webp"
     },
     {
       "id": 4,
@@ -47,10 +50,11 @@
       "category": "eyewear",
       "thumbnail": "images/5.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005613",
-      "rating": 3.0,
+      "rating": 3,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min5.webp"
     },
     {
       "id": 5,
@@ -60,10 +64,11 @@
       "category": "eyewear",
       "thumbnail": "images/6.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005421",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min6.webp"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min7.webp"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "rating": 4.5,
       "color": "Gold",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min8.webp"
     },
     {
       "id": 8,
@@ -99,10 +106,11 @@
       "category": "eyewear",
       "thumbnail": "images/9.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3025176",
-      "rating": 3.0,
+      "rating": 3,
       "color": "Gold",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min9.webp"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "rating": 3.5,
       "color": "Silver",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min10.webp"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min11.webp"
     },
     {
       "id": 11,
@@ -138,10 +148,11 @@
       "category": "eyewear",
       "thumbnail": "images/12.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005641",
-      "rating": 5.0,
+      "rating": 5,
       "color": "Clear",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min12.webp"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min13.webp"
     },
     {
       "id": 13,
@@ -164,10 +176,11 @@
       "category": "eyewear",
       "thumbnail": "images/14.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005728",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min14.webp"
     },
     {
       "id": 14,
@@ -177,10 +190,11 @@
       "category": "eyewear",
       "thumbnail": "images/15.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3005729",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 50
+      "sale_rate": 50,
+      "thumbnailMin": "images/min-products/min15.webp"
     },
     {
       "id": 15,
@@ -193,7 +207,8 @@
       "rating": 4.5,
       "color": "Havana",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min16.webp"
     },
     {
       "id": 16,
@@ -206,7 +221,8 @@
       "rating": 4.5,
       "color": "Brown",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min17.webp"
     },
     {
       "id": 17,
@@ -219,7 +235,8 @@
       "rating": 3.5,
       "color": "Tortoise",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min18.webp"
     },
     {
       "id": 18,
@@ -232,7 +249,8 @@
       "rating": 3.5,
       "color": "Black",
       "badge": "SALE",
-      "sale_rate": 25
+      "sale_rate": 25,
+      "thumbnailMin": "images/min-products/min19.webp"
     },
     {
       "id": 19,
@@ -245,7 +263,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 40
+      "sale_rate": 40,
+      "thumbnailMin": "images/min-products/min20.webp"
     },
     {
       "id": 20,
@@ -255,10 +274,11 @@
       "category": "eyewear",
       "thumbnail": "images/21.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3004107",
-      "rating": 5.0,
+      "rating": 5,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min21.webp"
     },
     {
       "id": 21,
@@ -271,7 +291,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 25
+      "sale_rate": 25,
+      "thumbnailMin": "images/min-products/min22.webp"
     },
     {
       "id": 22,
@@ -284,7 +305,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min23.webp"
     },
     {
       "id": 23,
@@ -297,7 +319,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 20
+      "sale_rate": 20,
+      "thumbnailMin": "images/min-products/min24.webp"
     },
     {
       "id": 24,
@@ -307,10 +330,11 @@
       "category": "eyewear",
       "thumbnail": "images/25.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3016108",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min25.webp"
     },
     {
       "id": 25,
@@ -323,7 +347,8 @@
       "rating": 4.5,
       "color": "Black",
       "badge": "SALE",
-      "sale_rate": 20
+      "sale_rate": 20,
+      "thumbnailMin": "images/min-products/min26.webp"
     },
     {
       "id": 26,
@@ -336,7 +361,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min27.webp"
     },
     {
       "id": 27,
@@ -346,10 +372,11 @@
       "category": "eyewear",
       "thumbnail": "images/28.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3025651",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min28.webp"
     },
     {
       "id": 28,
@@ -359,10 +386,11 @@
       "category": "eyewear",
       "thumbnail": "images/29.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3015164",
-      "rating": 4.0,
+      "rating": 4,
       "color": "Black",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min29.webp"
     },
     {
       "id": 29,
@@ -375,7 +403,8 @@
       "rating": 4.5,
       "color": "Black",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min30.webp"
     },
     {
       "id": 30,
@@ -385,10 +414,11 @@
       "category": "eyewear",
       "thumbnail": "images/31.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3013762",
-      "rating": 4.0,
+      "rating": 4,
       "color": "Clear",
       "badge": "SALE",
-      "sale_rate": 25
+      "sale_rate": 25,
+      "thumbnailMin": "images/min-products/min31.webp"
     },
     {
       "id": 31,
@@ -398,10 +428,11 @@
       "category": "eyewear",
       "thumbnail": "images/32.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3013763",
-      "rating": 5.0,
+      "rating": 5,
       "color": "Black",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min32.webp"
     },
     {
       "id": 32,
@@ -414,7 +445,8 @@
       "rating": 3.5,
       "color": "Silver",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min33.webp"
     },
     {
       "id": 33,
@@ -424,10 +456,11 @@
       "category": "eyewear",
       "thumbnail": "images/34.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3013769",
-      "rating": 4.0,
+      "rating": 4,
       "color": "Black",
       "badge": "SALE",
-      "sale_rate": 20
+      "sale_rate": 20,
+      "thumbnailMin": "images/min-products/min34.webp"
     },
     {
       "id": 34,
@@ -440,7 +473,8 @@
       "rating": 3.5,
       "color": "Black",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min35.webp"
     },
     {
       "id": 35,
@@ -453,7 +487,8 @@
       "rating": 4.5,
       "color": "Black",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min36.webp"
     },
     {
       "id": 36,
@@ -466,7 +501,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min37.webp"
     },
     {
       "id": 37,
@@ -479,7 +515,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min38.webp"
     },
     {
       "id": 38,
@@ -489,10 +526,11 @@
       "category": "eyewear",
       "thumbnail": "images/39.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3009133",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min39.webp"
     },
     {
       "id": 39,
@@ -505,7 +543,8 @@
       "rating": 3.5,
       "color": "Clear",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min40.webp"
     },
     {
       "id": 40,
@@ -515,10 +554,11 @@
       "category": "eyewear",
       "thumbnail": "images/41.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=2565766",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min41.webp"
     },
     {
       "id": 41,
@@ -528,10 +568,11 @@
       "category": "eyewear",
       "thumbnail": "images/42.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=2568460",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min42.webp"
     },
     {
       "id": 42,
@@ -544,7 +585,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min43.webp"
     },
     {
       "id": 43,
@@ -554,10 +596,11 @@
       "category": "eyewear",
       "thumbnail": "images/44.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3000756",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min44.webp"
     },
     {
       "id": 44,
@@ -567,10 +610,11 @@
       "category": "eyewear",
       "thumbnail": "images/45.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3006882",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 25
+      "sale_rate": 25,
+      "thumbnailMin": "images/min-products/min45.webp"
     },
     {
       "id": 45,
@@ -580,10 +624,11 @@
       "category": "eyewear",
       "thumbnail": "images/46.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3006881",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min46.webp"
     },
     {
       "id": 46,
@@ -593,10 +638,11 @@
       "category": "eyewear",
       "thumbnail": "images/47.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3006907",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 35
+      "sale_rate": 35,
+      "thumbnailMin": "images/min-products/min47.webp"
     },
     {
       "id": 47,
@@ -606,10 +652,11 @@
       "category": "eyewear",
       "thumbnail": "images/48.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3006934",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min48.webp"
     },
     {
       "id": 48,
@@ -619,10 +666,11 @@
       "category": "eyewear",
       "thumbnail": "images/49.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3015282",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min49.webp"
     },
     {
       "id": 49,
@@ -635,7 +683,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min50.webp"
     },
     {
       "id": 50,
@@ -648,7 +697,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 50
+      "sale_rate": 50,
+      "thumbnailMin": "images/min-products/min51.webp"
     },
     {
       "id": 51,
@@ -661,7 +711,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min52.webp"
     },
     {
       "id": 52,
@@ -674,7 +725,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min53.webp"
     },
     {
       "id": 53,
@@ -687,7 +739,8 @@
       "rating": 3.5,
       "color": "",
       "badge": "NEW",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min54.webp"
     },
     {
       "id": 54,
@@ -697,10 +750,11 @@
       "category": "eyewear",
       "thumbnail": "images/55.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3016997",
-      "rating": 5.0,
+      "rating": 5,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min55.webp"
     },
     {
       "id": 55,
@@ -713,7 +767,8 @@
       "rating": 4.5,
       "color": "",
       "badge": "BEST",
-      "sale_rate": 0
+      "sale_rate": 0,
+      "thumbnailMin": "images/min-products/min56.webp"
     },
     {
       "id": 56,
@@ -723,10 +778,11 @@
       "category": "eyewear",
       "thumbnail": "images/57.webp",
       "sourceUrl": "https://rounz.com/product.php?productIndex=3016987",
-      "rating": 4.0,
+      "rating": 4,
       "color": "",
       "badge": "SALE",
-      "sale_rate": 45
+      "sale_rate": 45,
+      "thumbnailMin": "images/min-products/min57.webp"
     }
   ]
 }

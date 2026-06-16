@@ -99,7 +99,7 @@ function renderFetured() {
   featuredProducts.forEach((featuredProduct, index) => {
     const featuredItem = featuredItemTemplate.content.cloneNode(true);
     featuredItem.querySelector(".main__featured-image").src =
-      featuredProduct.thumbnail;
+      featuredProduct.thumbnailMin;
     featuredItem.querySelector(".main__featured-image").alt =
       featuredProduct.title;
     featuredItem.querySelector(".main__featured-brand").textContent =
