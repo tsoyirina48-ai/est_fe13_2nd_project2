@@ -6,9 +6,11 @@ import "../../js/modules/footer.js";
 import "../../css/pages/productList.css";
 
 const productGrid = document.querySelector(".grid");
+const paginationContainer = document.querySelector(".pagination");
 
 const countPerPage = 4;
-const currentPage = 1;
+const pagerPerGroup = 3;
+let currentPage = 1;
 let products = [];
 let filteredData = [];
 
@@ -26,13 +28,9 @@ async function fetchProducts() {
     products = data.products;
     filteredData = products;
     console.log(filteredData);
-    //pagination 생성
-    // makePagination(filteredData.length);
 
     renderProducts(filteredData);
-    // renderCategories();
-    // renderBrands();
-    // renderPrices();
+    renderPagination(filteredData.length);
   } catch {
   } finally {
   }
@@ -127,4 +125,56 @@ function generateStarRating(rating) {
   }
 
   return starsHTML;
+}
+
+// 페이지 네이션 생성
+function renderPagination(totalItems) {
+  const totalPages = Math.ceil(totalItems / pagerPerGroup);
+  if (totalPages <= 1) {
+    paginationContainer.innerHTML = "";
+    return;
+  }
+
+  const maxPagesToShow = pagerPerGroup;
+  const currentBlock = Math.floor((currentPage - 1) / maxPagesToShow);
+  const startPage = currentBlock * maxPagesToShow + 1;
+  const endPage = Math.min(startPage + maxPagesToShow - 1, totalPages);
+
+  let paginationHTML = "";
+
+  paginationHTML += `<button type="button" class="pagination__btn pagination__prev" ${currentPage === 1 ? "disabled" : ""}>PrevBtn</button>`;
+
+  for (let i = startPage; i <= endPage; i++) {
+    paginationHTML += `<button type="button" class="pagination__btn pagination__page ${i === currentPage ? "active" : ""}" data-page="${i}">${i}</button>`;
+  }
+
+  paginationHTML += `<button type="button" class="pagination__btn pagination__next" ${currentPage === totalPages ? "disabled" : ""}>NextBtn</button>`;
+
+  paginationContainer.innerHTML = paginationHTML;
+
+  paginationContainer.querySelectorAll(".pagination__page").forEach(btn => {
+    btn.addEventListener("click", e => {
+      currentPage = Number(e.currentTarget.dataset.page);
+      renderProducts(filteredData);
+      renderPagination(filteredData.length);
+    });
+  });
+
+  const prevBtn = paginationContainer.querySelector(".pagination__prev");
+  if (prevBtn && currentPage > 1) {
+    prevBtn.addEventListener("click", () => {
+      currentPage--;
+      renderProducts(filteredData);
+      renderPagination(filteredData.length);
+    });
+  }
+
+  const nextBtn = paginationContainer.querySelector(".pagination__next");
+  if (nextBtn && currentPage < totalPages) {
+    nextBtn.addEventListener("click", () => {
+      currentPage++;
+      renderProducts(filteredData);
+      renderPagination(filteredData.length);
+    });
+  }
 }

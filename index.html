@@ -20,6 +20,7 @@
             <p class="text-title-small">
               안경을 사고 쓰는 일이 즐겨운 경험이 되도록
             </p>
+            <a href="#">시작하기</a>
           </div>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -27,6 +28,7 @@
               <div class="swiper-slide">
                 <img
                   class="hero__image-1"
+                  sizes="(max-width:480px) 480px, (max-width:768px) 768px, (max-width:1200px) 1200px"
                   src="/images/hero/hero1.webp"
                   alt=""
                   srcset="/images/hero/hero1-480.webp 480w, /images/hero/hero1-768.webp 768w, /images/hero/hero1.webp 1200w"
@@ -38,6 +40,8 @@
                   class="hero__image-2"
                   src="/images/hero/hero2.webp"
                   alt=""
+                  width="1200"
+                  height="675"
                   srcset="/images/hero/hero2-480.webp 480w, /images/hero/hero2-768.webp 768w, /images/hero/hero2.webp 1200w"
                   loading="lazy"
                 >
@@ -47,6 +51,8 @@
                   class="hero__image-3"
                   src="/images/hero/hero3.webp"
                   alt=""
+                  width="1200"
+                  height="675"
                   srcset="/images/hero/hero3-480.webp 480w, /images/hero/hero3-768.webp 768w, /images/hero/hero3.webp 1200w"
                   loading="lazy"
                 >
@@ -96,13 +102,12 @@
                     </div>
                   </div>
                 </template>
-                <div class="skeleton-grid">
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                  <div class="skeleton skeleton-text"></div>
-                </div>
+
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
               </div>
               <div
                 id="event"
@@ -237,16 +242,50 @@
       </section>
       <section class="main__featured" aria-labelledby="main-featured-heading">
         <div class="wrapper">
-          <h2 id="main-featured-heading" class="text-headline-small">
-            추천 컬렉션
-          </h2>
+          <div class="main__featured-heading-group">
+            <h2 id="main-featured-heading" class="text-headline-small">
+              추천 컬렉션
+            </h2>
+            <a href="#" class="text-label-medium">더 보기 ></a>
+          </div>
           <div class="main__featured-container auto-grid">
             <template id="main-featured-template">
-              <div class="main_featured-card">
-                <img class="main__featured-image" src="" alt="" loading="lazy">
+              <div class="main__featured-card">
+                <img
+                  class="main__featured-image"
+                  src=""
+                  alt=""
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                >
                 <div class="main__featured-card-content">
                   <p class="main__featured-brand text-label-medium"></p>
-                  <h3 class="main__featured-title text-label-medium"></h3>
+                  <h3>
+                    <a href="#" class="main__featured-title text-label-medium"
+                      >.</a
+                    >
+                  </h3>
+                  <div class="main__featured-rating-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <title>별점</title>
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+                    <span class="main__featured-rating"></span>
+                  </div>
                   <p class="main__featured-price text-body-large"></p>
                 </div>
               </div>
@@ -311,19 +350,23 @@
             height="800"
             srcset="/images/main-brand-bg-480.webp 480w, /images/main-brand-bg-768.webp 768w, /images/main-brand-bg.webp 1200w"
           >
-          <h2 id="main-brand-heading">당신의 시선을 완성하다</h2>
+          <h2 id="main-brand-heading" class="text-headline-medium">
+            당신의 시선을 완성하다
+          </h2>
           <p>라이프 스타일을 완성하는 프리미엄 안경</p>
-          <button type="button">지금 바로 시작하기</button>
+          <a href="#">지금 바로 시작하기</a>
         </div>
       </section>
       <section class="main__review" aria-labelledby="main-review-heading">
         <div class="wrapper">
-          <h2 id="main-review-heading text-headline-small">후기</h2>
+          <h2 id="main-review-heading" class="text-headline-small">후기</h2>
           <div class="auto-grid">
             <div class="main__review-card">
               <img
                 src="/images/avatars/review1.webp"
                 alt="clumsy7206 프로필 이미지"
+                width="150"
+                height="150"
                 loading="lazy"
               >
               <p>
@@ -340,6 +383,8 @@
               <img
                 src="/images/avatars/review2.webp"
                 alt=" lushness2226프로필 이미지"
+                width="150"
+                height="150"
                 loading="lazy"
               >
               <p>
@@ -354,6 +399,8 @@
               <img
                 src="/images/avatars/review3.webp"
                 alt="sprung9113 프로필 이미지"
+                width="150"
+                height="150"
                 loading="lazy"
               >
               <p>
@@ -371,9 +418,38 @@
       </section>
       <section class="main__cta" aria-labelledby="main-cta-heading">
         <div class="wrapper">
-          <h2 id="main-cta-heading" class="text-headline-small">
-            지금 바로 시작하세요
-          </h2>
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-truck-electric-icon lucide-truck-electric"
+          >
+            <path d="M14 19V7a2 2 0 0 0-2-2H9" />
+            <path d="M15 19H9" />
+            <path
+              d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14"
+            />
+            <path d="M2 13v5a1 1 0 0 0 1 1h2" />
+            <path
+              d="M4 3 2.15 5.15a.495.495 0 0 0 .35.86h2.15a.47.47 0 0 1 .35.86L3 9.02"
+            />
+            <circle cx="17" cy="19" r="2" />
+            <circle cx="7" cy="19" r="2" />
+          </svg>
+          <div class="main__cta-text-container">
+            <h2 id="main-cta-heading" class="text-headline-medium">
+              지금 바로 시작하세요
+            </h2>
+            <p>전 상품 무료 배송</p>
+            <a href="#">쇼핑하기</a>
+          </div>
         </div>
       </section>
     </main>

@@ -7,11 +7,15 @@
     <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <script type="module" src="./src/js/pages/detail.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
   </head>
   <body>
     <header class="site__header"></header>
     <main>
-      <section class="wrapper detail_category">
+      <section class="wrapper detail_category text-title-small">
         <a href="./index.html">Home</a>
         <p>></p>
         <a href="#">선글라스</a>
@@ -20,9 +24,23 @@
       </section>
       <section class="wrapper detail_product">
         <div class="detail_product_left">
-          <div class="product-main-image">
-            <span class="discount-badge">-17%</span>
-            <img src="public/images/2.webp" alt="상품 이름">
+          <div class="product-main-image swiper">
+            <span class="discount-badge text-title-medium">-17%</span>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="public/images/2.webp" alt="상품 이름">
+              </div>
+              <div class="swiper-slide">
+                <img src="public/images/3.webp" alt="상품 이름">
+              </div>
+              <div class="swiper-slide">
+                <img src="public/images/4.webp" alt="상품 이름">
+              </div>
+              <div class="swiper-slide">
+                <img src="public/images/5.webp" alt="상품 이름">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="product-thumbnails">
             <img src="public/images/2.webp" alt="썸네일 1">
@@ -33,151 +51,567 @@
         </div>
 
         <div class="detail_product_right">
-          <div class="product-brand">
-            <span>RAY-BAN</span>
-            <button type="button">♡</button>
-          </div>
-
-          <h1 class="product-title">레이밴 선글라스 클럽마스터</h1>
-
-          <div class="product-rating">
-            <div class="stars" aria-label="4.8점">
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star filled">★</span>
-              <span class="star">★</span>
+          <div class="product-info">
+            <div class="product-brand text-title-small">
+              <span>RAY-BAN</span>
+              <a href="#"
+                ><span class="material-icons">favorite_border</span></a
+              >
             </div>
-            <span class="rating-score">4.8</span>
-            <span class="rating-count">124개의 후기</span>
-          </div>
 
-          <p class="product-price">239,000원</p>
-          <p class="product-stock">In Stock</p>
+            <h1 class="product-title text-display-small">
+              레이밴 선글라스 클럽마스터
+            </h1>
 
-          <hr>
-
-          <dl class="product-meta">
-            <div class="meta-row">
-              <div class="meta-item">
-                <dt>CATEGORY</dt>
-                <dd>Sunglasses</dd>
+            <div class="product-rating text-body-large">
+              <div class="stars" aria-label="4.8점">
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
               </div>
-              <div class="meta-item">
-                <dt>STYLE</dt>
-                <dd>Aviator</dd>
+              <span class="rating-score">5.0</span>
+              <span class="rating-count">3개의 후기</span>
+            </div>
+
+            <p class="product-price text-headline-large">239,000원</p>
+            <p class="product-stock text-title-small">In Stock</p>
+
+            <hr>
+
+            <div class="product-meta">
+              <div class="meta-row">
+                <ul class="meta-item">
+                  <li>CATEGORY</li>
+                  <li>Sunglasses</li>
+                </ul>
+                <ul class="meta-item">
+                  <li>STYLE</li>
+                  <li>Aviator</li>
+                </ul>
+              </div>
+              <div class="meta-row">
+                <ul class="meta-item">
+                  <li>COLOR</li>
+                  <li>Black</li>
+                </ul>
+                <ul class="meta-item">
+                  <li>MATERIAL</li>
+                  <li>Metal</li>
+                </ul>
               </div>
             </div>
-            <div class="meta-row">
-              <div class="meta-item">
-                <dt>COLOR</dt>
-                <dd>Black</dd>
-              </div>
-              <div class="meta-item">
-                <dt>MATERIAL</dt>
-                <dd>Metal</dd>
-              </div>
-            </div>
-          </dl>
 
-          <div class="product-quantity">
-            <label>Quantity</label>
-            <div class="quantity-control">
-              <button type="button">−</button>
-              <input type="number" value="1" min="1">
-              <button type="button">+</button>
+            <div class="product-quantity">
+              <label class="text-title-medium">Quantity</label>
+              <div class="quantity-control">
+                <button type="button">-</button>
+                <div class="quantity-number">1</div>
+                <button type="button">+</button>
+              </div>
             </div>
           </div>
 
           <div class="product-actions">
-            <button type="button">🛒 장바구니 추가</button>
-            <button type="button">즉시 구매</button>
-            <button type="button">↗ 공유</button>
+            <a href="#" class="AddtoCart"
+              ><span class="material-icons"> shopping_cart </span>장바구니 추가</a
+            >
+            <a href="./cart.html">즉시 구매</a>
+            <a href="#"><span class="material-icons"> share </span>공유</a>
           </div>
         </div>
       </section>
 
-      <!-- Product Detail Tabs -->
+      <!-- 제품 정보 탭 -->
       <section class="wrapper product-detail">
         <div class="tabs">
-          <a href="">상세정보</a>
-          <a href="">후기</a>
-          <a href="">문의</a>
-          <a href="">구매정보</a>
+          <a href="#product-info" class="active">상세정보</a>
+          <a href="#reviews">후기</a>
+          <a href="#qna">문의</a>
+          <a href="#order-info">구매정보</a>
         </div>
 
-        <!-- About -->
-        <div class="detail-section">
-          <h2>About This Product</h2>
-          <p>
-            The iconic Ray-Ban Aviator sunglasses have been a symbol of style
-            and sophistication since 1936. With their distinctive teardrop shape
-            and thin metal frame, these timeless glasses offer both UV
-            protection and timeless elegance.
-          </p>
-        </div>
+        <hr>
 
-        <!-- Key Features -->
-        <div class="detail-section">
-          <h2>Key Features</h2>
-          <div class="features-grid">
-            <ul class="feature-list">
-              <li>✓ 100% UV protection</li>
-              <li>✓ Adjustable nose pads</li>
-              <li>✓ Includes original Ray-Ban case</li>
-            </ul>
-            <ul class="feature-list">
-              <li>✓ 100% UV protection</li>
-              <li>✓ Adjustable nose pads</li>
-              <li>✓ Includes original Ray-Ban case</li>
+        <!-- 상세정보 -->
+        <section class="detail-content active" id="product-info">
+          <div class="detail-section About">
+            <h2 class="text-headline-small">About This Product</h2>
+            <p class="text-body-large">
+              클래식은 영원하다, 레이밴 SINCE 1937. 시간이 증명하는 글로벌
+              아이웨어 브랜드. '빛(Ray)을 막아준다(Ban)'는 이름처럼 선글라스
+              본연의 역할에 집중하며 누구나 어울리는 클래식한 디자인을
+              선보입니다.
+            </p>
+          </div>
+
+          <!-- 특징 -->
+          <div class="detail-section Key-Features">
+            <h2 class="text-headline-small">Key Features</h2>
+            <div class="features-grid text-body-large">
+              <ul class="feature-list">
+                <li>
+                  <span class="material-icons">check</span>자외선 100% 차단
+                </li>
+                <li>
+                  <span class="material-icons">check</span>코받침 조절 가능
+                </li>
+                <li>
+                  <span class="material-icons">check</span>레이밴 정품 케이스
+                  포함
+                </li>
+              </ul>
+              <ul class="feature-list">
+                <li>
+                  <span class="material-icons">check</span>가볍고 편안한 착용감
+                </li>
+                <li>
+                  <span class="material-icons">check</span>클래식한 아이웨어
+                  디자인
+                </li>
+                <li>
+                  <span class="material-icons">check</span>일상과 여행 모두에
+                  어울리는 스타일
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 사양 -->
+          <div class="detail-section Specifications">
+            <h2 class="text-headline-small">제품 사양</h2>
+            <div class="specs-grid">
+              <dl>
+                <dt>프레임 너비</dt>
+                <dd class="text-body-large">140mm</dd>
+                <dt>브릿지 너비</dt>
+                <dd class="text-body-large">17mm</dd>
+                <dt>렌즈 소재</dt>
+                <dd class="text-body-large">유리</dd>
+                <dt>자외선 차단</dt>
+                <dd class="text-body-large">UVA / UVB 100% 차단</dd>
+              </dl>
+              <dl>
+                <dt>렌즈 너비</dt>
+                <dd class="text-body-large">58mm</dd>
+                <dt>다리 길이</dt>
+                <dd class="text-body-large">145mm</dd>
+                <dt>프레임 소재</dt>
+                <dd class="text-body-large">메탈</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- 후기 -->
+        <section class="detail-content" id="reviews">
+          <div class="detail-section review-summary">
+            <h2 class="text-headline-small">제품 후기</h2>
+
+            <div class="review-count">
+              <div class="review-score">
+                <span class="material-icons">star star star star star</span>
+                <strong class="text-title-large">5.0</strong>
+              </div>
+              <p class="text-body-large">총 3개의 후기</p>
+            </div>
+
+            <div class="review-list">
+              <article class="review-item">
+                <div class="review-article">
+                  <span class="material-icons">star star star star star</span>
+
+                  <h3 class="text-title-medium">깔끔하고 클래식한 디자인</h3>
+                  <p class="text-body-large">
+                    프레임이 가볍지만 튼튼하고, 렌즈 색상도 부담스럽지 않아서
+                    데일리로 착용하기 좋아요. 캐주얼한 룩은 물론 포멀한
+                    스타일에도 잘 어울려요!
+                  </p>
+                  <p class="text-body-medium">Minji K. | 2026.06.12</p>
+                </div>
+                <img
+                  src="./public/images/avatars/detail-review1.png"
+                  alt="후기 이미지"
+                >
+              </article>
+
+              <article class="review-item">
+                <div class="review-article">
+                  <span class="material-icons">star star star star star</span>
+                  <h3 class="text-title-medium">오래 착용해도 편안함</h3>
+
+                  <p class="text-body-large">
+                    코받침이 편안하고 다리 부분도 세게 눌리지 않아서 장시간
+                    착용해도 부담이 적음. 함께 제공되는 케이스도 고급스러운
+                    느낌이라 만족.
+                  </p>
+                  <p class="text-body-medium">Jihun P. | 2026.06.04</p>
+                </div>
+                <img
+                  src="./public/images/avatars/detail-review2.png"
+                  alt="후기 이미지"
+                >
+              </article>
+
+              <article class="review-item">
+                <div class="review-article">
+                  <span class="material-icons">star star star star star</span>
+
+                  <h3 class="text-title-medium">
+                    여행용 선글라스로 추천해요!!!
+                  </h3>
+                  <p class="text-body-large">
+                    디자인이 유행을 타지 않고, 자외선 차단 기능도 좋아서 야외
+                    활동할 때 사용하기 좋아요. 선물용으로도 추천할 만한
+                    제품입니다.
+                  </p>
+                  <p class="text-body-medium">Soyeon L. | 2026.05.28</p>
+                </div>
+                <img
+                  src="./public/images/avatars/detail-review3.png"
+                  alt="후기 이미지"
+                >
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- 문의 -->
+        <section class="detail-content" id="qna">
+          <div class="detail-section qna-summary">
+            <h2 class="text-headline-small">상품 문의</h2>
+            <p class="text-body-large">
+              사이즈, 착용감, 배송 또는 상품 정보가 궁금하신가요? 문의를
+              남겨주시면 담당자가 빠르게 답변해드립니다.
+            </p>
+            <div class="qna-list">
+              <article class="qna-item">
+                <div class="qna-item-header">
+                  <h3 class="text-title-medium">코받침 조절이 가능한가요?</h3>
+                  <p class="text-body-medium">Minji K. | 2026.06.13</p>
+                </div>
+
+                <div class="qna-question text-body-large">
+                  <span class="material-icons">help_outline</span>
+                  <p>
+                    코가 낮은 편인데, 더 편하게 착용할 수 있도록 코받침 조절이
+                    가능한가요?
+                  </p>
+                </div>
+
+                <div class="qna-answer text-body-large">
+                  <span class="material-icons">subdirectory_arrow_right</span>
+                  <p>
+                    네. 메탈 코받침은 안경원에서 가볍게 조절하여 더욱 편안한
+                    착용감으로 맞출 수 있습니다.
+                  </p>
+                </div>
+              </article>
+              <article class="qna-item">
+                <div class="qna-item-header">
+                  <h3 class="text-title-medium">레이밴 케이스 포함 여부</h3>
+                  <p class="text-body-medium">Jihun P. | 2026.06.07</p>
+                </div>
+
+                <div class="qna-question text-body-large">
+                  <span class="material-icons">help_outline</span>
+                  <p>제품 구매시 케이스와 클리닝 천이 함께 오나요?</p>
+                </div>
+
+                <div class="qna-answer text-body-large">
+                  <span class="material-icons">subdirectory_arrow_right</span>
+                  <p>
+                    네. 해당 상품에는 레이밴 정품 케이스와 클리닝 천이 함께
+                    포함되어 있습니다.
+                  </p>
+                </div>
+              </article>
+              <article class="qna-item">
+                <div class="qna-item-header">
+                  <h3 class="text-title-medium">
+                    블랙 색상은 언제 재입고되나요?
+                  </h3>
+                  <p class="text-body-medium">Soyeon L. | 2026.06.02</p>
+                </div>
+
+                <div class="qna-question text-body-large">
+                  <span class="material-icons">help_outline</span>
+                  <p>
+                    선물용으로 하나 더 구매하고 싶은데, 블랙 색상 재입고 일정이
+                    있을까요?
+                  </p>
+                </div>
+
+                <div class="qna-answer text-body-large">
+                  <span class="material-icons">subdirectory_arrow_right</span>
+                  <p>
+                    현재 블랙 색상은 재입고 일정이 확인 중입니다. 정확한 입고
+                    일정이 확정되면 상품 페이지 또는 알림 서비스를 통해 안내드릴
+                    예정입니다. 관심 상품으로 등록해두시면 재입고 시 빠르게
+                    확인하실 수 있습니다.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- 구매정보 -->
+        <section class="detail-content" id="order-info">
+          <!-- 도수 렌즈 제작 -->
+          <div class="detail-section order-section">
+            <h2 class="text-headline-small">도수 렌즈 제작</h2>
+            <ul class="order-list text-body-large">
+              <li>
+                - 도수렌즈는 온라인 판매가 허용되지 않아, 안경원에서만 구입이
+                가능합니다.
+              </li>
+              <li>
+                - 라운즈 플래그십 스토어나 라운즈 파트너 안경원에서 도수렌즈를
+                제작하실 수 있습니다.
+              </li>
+              <li>
+                - 특정 상품의 도수렌즈 삽입 가능 여부는 고객센터를 통해 확인
+                가능합니다. <strong>1522-0416</strong>
+              </li>
             </ul>
           </div>
-        </div>
 
-        <!-- Specifications -->
-        <div class="detail-section">
-          <h2>Specifications</h2>
-          <div class="specs-grid">
-            <dl>
-              <dt>FRAME WIDTH</dt>
-              <dd>140mm</dd>
-              <dt>BRIDGE WIDTH</dt>
-              <dd>17mm</dd>
-              <dt>LENS MATERIAL</dt>
-              <dd>Glass</dd>
-              <dt>UV PROTECTION</dt>
-              <dd>100% UVA/UVB</dd>
-            </dl>
-            <dl>
-              <dt>LENS WIDTH</dt>
-              <dd>58mm</dd>
-              <dt>TEMPLE LENGTH</dt>
-              <dd>145mm</dd>
-              <dt>FRAME MATERIAL</dt>
-              <dd>Metal</dd>
-            </dl>
+          <!-- 배송안내 -->
+          <div class="detail-section order-section">
+            <h2 class="text-headline-small">배송 안내</h2>
+
+            <div class="delivery-table-wrap">
+              <table class="delivery-table text-body-large">
+                <thead>
+                  <tr>
+                    <th>종류</th>
+                    <th>안내사항</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>우체국택배<br>CJ 대한통운</td>
+                    <td>
+                      <ul>
+                        <li>배송비용: 전 상품 무료</li>
+                        <li>
+                          배송기간: 당일발송 상품의 경우 평일 오후 3시까지 결제
+                          완료 시 당일 발송됩니다. 그 외 상품의 경우 별도 안내를
+                          드립니다.
+                        </li>
+                        <li>
+                          단, 렌즈 옵션을 추가한 상품은 렌즈 가공 후 발송되므로
+                          배송기간이 영업일 기준 2~3일 추가 소요됩니다.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>퀵서비스</td>
+                    <td>
+                      <ul>
+                        <li>배송비용: 고객 부담&#40;착불&#41;</li>
+                        <li>서울 지역만 가능합니다.</li>
+                        <li>
+                          주문 전 고객센터&#40;1522-0416&#41;로 신청 시 퀵배송이
+                          가능합니다.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>해외배송</td>
+                    <td>
+                      <ul>
+                        <li>배송비용: 고객 부담&#40;선불&#41;</li>
+                        <li>
+                          배송지역 및 배송기간: EMS 가능 국가에 한하며, 국가마다
+                          배송일이 상이합니다.
+                        </li>
+                        <li>
+                          주문 전 고객센터 문의 시 요금 등 상담이 가능합니다.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>방문수령</td>
+                    <td>
+                      <ul>
+                        <li>
+                          매장 방문수령을 원하실 경우 주문 시 배송방법에서
+                          방문수령을 선택해 주세요.
+                        </li>
+                        <li>
+                          플래그십 스토어 방문수령 시 개인 피팅을 무료로
+                          제공합니다.
+                        </li>
+                        <li>라운즈 오프라인 매장 위치를 확인해 주세요.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
 
-        <!-- Premium Services -->
-        <div class="detail-section">
-          <h2>Premium Services</h2>
+          <!-- 교환/반품 안내 -->
+          <div class="detail-section order-section">
+            <h2 class="text-headline-small">교환/반품 안내</h2>
+
+            <div class="notice-box text-body-large">
+              <strong>
+                [EVENT] 라운즈 회원님은 10일 이내
+                무료&#40;CJ대한통운/우체국&#41; 교환/반품!
+              </strong>
+            </div>
+
+            <ul class="order-list text-body-large">
+              <li>
+                라운즈 회원이라면 단순변심도 제품 수령 10일 내에 무료로
+                교환/반품 가능합니다.
+              </li>
+              <li>ID당 1회 한정으로 제공됩니다.</li>
+              <li>
+                고객 부주의로 인한 파손이나 구성품 분실 시 교환/환불이
+                불가합니다.
+              </li>
+              <li>렌즈 옵션을 추가한 상품은 교환/환불이 불가합니다.</li>
+            </ul>
+
+            <h4 class="text-title-medium">교환/반품 접수</h4>
+            <ul class="order-list text-body-large">
+              <li>
+                ROUNZ.COM 마이페이지 → 주문내역 하단의 교환신청/반품신청을
+                선택해 주세요.
+              </li>
+            </ul>
+
+            <div class="notice-box text-body-large">
+              <strong>
+                [RayNeo] 레이네오 스마트 안경은 전자제품 특성상 단순변심으로
+                인한 교환/반품이 불가합니다.
+              </strong>
+            </div>
+
+            <ul class="order-list text-body-large">
+              <li>
+                레이네오 스마트 안경은 구매일로부터 1년 동안 무상 A/S가
+                가능하며, 공식 A/S 접수처로 문의 부탁드립니다.
+              </li>
+              <li>단, 사용자 부주의로 인한 파손 및 고장은 유상 처리됩니다.</li>
+              <li>레이네오 공식 A/S 접수처: <strong>031-205-4133</strong></li>
+            </ul>
+          </div>
+
+          <!-- 꼭 확인해주세요 -->
+          <div class="detail-section order-section">
+            <h2 class="text-headline-small">꼭 확인해주세요!</h2>
+
+            <ol class="order-check-list text-body-large">
+              <li>
+                온라인으로 구매하신 제품은 오프라인 매장에서 교환/반품하실 수
+                없습니다.
+              </li>
+
+              <li>
+                아래의 경우 교환/반품이 어렵습니다.
+                <ul>
+                  <li>렌즈 옵션을 추가한 상품인 경우</li>
+                  <li>
+                    제품의 사용/하자 여부와 관계없이 수령 후 10일이 지난 경우
+                  </li>
+                  <li>제품 구성품이 분실 또는 훼손된 경우</li>
+                  <li>개인 피팅을 받거나 렌즈를 교체한 경우</li>
+                </ul>
+              </li>
+
+              <li>
+                아래의 경우는 불량이 아닙니다.
+                <ul>
+                  <li>제조 및 유통 과정에서 발생할 수 있는 미세 스크래치</li>
+                  <li>
+                    제품의 컬러는 모니터 환경에 따라 차이가 있을 수 있습니다.
+                  </li>
+                  <li>
+                    제품의 사이즈는 측정 방법과 피팅 상태에 따라 오차가 있을 수
+                    있습니다.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                교환/반품 택배비를 확인해 주세요.
+                <ul>
+                  <li>
+                    단순 변심: 왕복 택배비 6,000원 계좌이체 또는 차감 환불
+                  </li>
+                  <li>회원일 경우 ID당 1회 무료 교환/반품이 가능합니다.</li>
+                  <li>상품 하자: 택배비 무료&#40;착불&#41;</li>
+                </ul>
+              </li>
+            </ol>
+
+            <div class="return-address text-body-large">
+              <strong>교환/반품 보내실 주소</strong>
+              <p>
+                서울특별시 강남구 강남대로 94길 34 K&amp;Y 1층 &#40;우편번호
+                06134&#41;
+              </p>
+            </div>
+          </div>
+
+          <!-- A/S 안내 -->
+          <div class="detail-section order-section">
+            <h2 class="text-headline-small">A/S 안내</h2>
+
+            <ul class="order-list text-body-large">
+              <li>라운즈에서 구매하신 상품에 한하여 A/S가 가능합니다.</li>
+              <li>
+                제품 자체의 불량인 경우 구매 후 1년 이내에는 무상 처리됩니다.
+                단, 단종이나 부품 수급이 어려운 경우 A/S가 어려울 수 있습니다.
+              </li>
+              <li>
+                고객님 과실에 의한 A/S는 비용이 청구되며, 단종이나 부품 수급이
+                어려운 경우 A/S가 어려울 수 있습니다.
+              </li>
+              <li>
+                A/S 기간은 보통 2~3주가 소요되며, 수입 제품의 경우 3~4주가
+                소요됩니다.
+              </li>
+              <li>A/S 비용 및 수리 기간은 사전에 안내드립니다.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 프리미엄 서비스 -->
+        <div class="detail-section Premium-Services">
+          <h2 class="text-headline-small">프리미엄 서비스</h2>
           <div class="services-grid">
             <div class="service-card">
-              <h3>Virtual Try-On</h3>
-              <p>
-                Use our AI technology to see how these frames look on you before
-                purchasing
+              <h3>가상 피팅</h3>
+              <p class="text-title-small">
+                AI 기술을 통해 구매 전 나에게 어울리는 착용 모습을 미리
+                확인해보세요!
               </p>
-              <a href="#">Try Now &gt;</a>
+              <a href="#"
+                >체험하기 <span class="material-icons"> arrow_forward </span></a
+              >
             </div>
             <div class="service-card">
-              <h3>In-Store Consultation</h3>
-              <p>
-                Book an appointment with our eyewear specialists for
-                personalized advice
+              <h3>써보기 예약</h3>
+              <p class="text-title-small">
+                궁금한 안경, 선글라스를 무료로 예약해서 가까운 안경원에서 직접
+                써보세요.
               </p>
-              <a href="#">Book Now &gt;</a>
+              <a href="#"
+                >예약하기 <span class="material-icons"> arrow_forward </span></a
+              >
             </div>
           </div>
         </div>

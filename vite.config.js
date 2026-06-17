@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         notFound: resolve(__dirname, "404.html"),
         productList: resolve(__dirname, "productList.html"),
+        detail: resolve(__dirname, "detail.html"),
       },
     },
   },

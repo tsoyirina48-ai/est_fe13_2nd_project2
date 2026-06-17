@@ -1,5 +1,3 @@
-import "../../css/modules/header.css";
-
 const siteHeader = document.querySelector(".site__header");
 function renderHeader() {
   siteHeader.innerHTML = /* HTML */ `

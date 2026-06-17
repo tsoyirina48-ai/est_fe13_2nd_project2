@@ -1,19 +1,17 @@
-import "modern-normalize";
 import "../../css/style.css";
-
+import "../../css/pages/index.css";
 import "../modules/header.js";
 
 import Swiper from "swiper";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import "../../css/pages/index.css";
+
 import { renderTabs } from "../modules/tabs.js";
 
 const swiper = new Swiper(".swiper", {
-  modules: [Navigation, Pagination, Autoplay],
+  modules: [Navigation, Pagination],
   // Optional parameters
   loop: false,
 
@@ -46,10 +44,10 @@ function renderTabContent() {
   const eventItemContainer = document.querySelector("#event");
   const faqItemContainer = document.querySelector("#faq");
 
-  const skeletonGrid = document.querySelector(".skeleton-grid");
-  skeletonGrid.innerHTML = "";
+  const skeletonItem = noticeItemContainer.querySelectorAll(".skeleton");
+  // skeletonGrid.innerHTML = "";
 
-  notices.forEach(notice => {
+  notices.forEach((notice, i) => {
     const noticeItem = noticeItemTemplate.content.cloneNode(true);
 
     noticeItem.querySelector(".tab__panel--notice__title").textContent =
@@ -57,7 +55,7 @@ function renderTabContent() {
     noticeItem.querySelector(".tab__panel--notice__date").textContent =
       notice.date;
 
-    noticeItemContainer.appendChild(noticeItem);
+    skeletonItem[i].replaceWith(noticeItem);
   });
 
   events.forEach(event => {
@@ -99,19 +97,21 @@ function renderFetured() {
   featuredProducts.forEach((featuredProduct, index) => {
     const featuredItem = featuredItemTemplate.content.cloneNode(true);
     featuredItem.querySelector(".main__featured-image").src =
-      featuredProduct.thumbnail;
+      featuredProduct.thumbnailMin;
     featuredItem.querySelector(".main__featured-image").alt =
       featuredProduct.title;
     featuredItem.querySelector(".main__featured-brand").textContent =
       featuredProduct.brand;
     featuredItem.querySelector(".main__featured-title").textContent =
       featuredProduct.title;
+    featuredItem.querySelector(".main__featured-rating").textContent =
+      featuredProduct.rating;
     featuredItem.querySelector(".main__featured-price").textContent =
-      `$₩{featuredProduct.price}`;
+      `₩${featuredProduct.price}`;
 
     skeletonCards[index].replaceWith(featuredItem);
   });
 }
 renderFetured();
 
-import "../../js/modules/footer.js";
+import "../modules/footer.js";
