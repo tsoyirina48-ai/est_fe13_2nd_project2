@@ -112,3 +112,13 @@
   background-color: var(--primary-container);
   border-radius: 50%;
 }
+.site__nav__content a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+.site__nav__content a:hover {
+  text-decoration: underline;
+}

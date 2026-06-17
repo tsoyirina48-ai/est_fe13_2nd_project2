@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+main {
+  flex: 1;
+}
+footer {
+  flex-shrink: 0;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.signup-container h1 {
+  margin-bottom: 8px;
+}
+
+.signup-container > p {
+  margin-bottom: 32px;
+  color: var(--muted-foreground);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.signup-form input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  color: var(--foreground);
+
+  background: var(--background);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.signup-btn {
+  width: 100%;
+  height: 48px;
+  color: var(--on-primary);
+  cursor: pointer;
+
+  background: var(--primary);
+
+  border: none;
+  border-radius: var(--radius);
+}
+
+.auth__social {
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: var(--radius);
+}
+
+.auth__social--naver {
+  margin-bottom: 12px;
+  color: #ffffff;
+  background-color: #03a94d;
+}
+
+.auth__social--kakao {
+  color: #191919;
+  background-color: #fee500;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.auth__socisl:hover,
+.signup-btn:hover {
+  opacity: 0.9;
+}
