@@ -45,7 +45,7 @@ main > section {
 .swiper {
   --swiper-navigation-color: rgb(63 68 123);
   --swiper-pagination-color: rgb(63 68 123);
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 16 / 9;
   margin-inline: auto;
 }
@@ -151,7 +151,7 @@ main > section {
 }
 
 .main__featured .auto-grid {
-  --min-col-size: calc(67.5rem / 6);
+  --min-col-size: 180px;
   --overflow-prevent: calc((100% - var(--gap-size)) / 2);
 }
 

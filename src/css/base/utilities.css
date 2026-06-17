@@ -1,6 +1,6 @@
 /* Layout */
 .wrapper {
-  width: min(100% - 2.5rem, var(--wrapper-max-width, 27.5rem));
+  width: min(100% - 40px, var(--wrapper-max-width, 27.5rem));
   margin-inline: auto;
 }
 
