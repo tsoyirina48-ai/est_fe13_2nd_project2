@@ -178,3 +178,19 @@ function renderPagination(totalItems) {
     });
   }
 }
+
+const filterBtn = document.querySelector(".filter-button");
+const filterPanel = document.querySelector(".filter-panel");
+const filterCloseBtn = document.querySelector(".filter-panel__close-button");
+
+if (filterBtn && filterPanel && filterCloseBtn) {
+  filterBtn.addEventListener("click", () => {
+    filterBtn.classList.add("hidden");
+    filterPanel.classList.remove("hidden");
+  });
+
+  filterCloseBtn.addEventListener("click", () => {
+    filterPanel.classList.add("hidden");
+    filterBtn.classList.remove("hidden");
+  });
+}
