@@ -104,6 +104,8 @@ function renderFetured() {
       featuredProduct.brand;
     featuredItem.querySelector(".main__featured-title").textContent =
       featuredProduct.title;
+    featuredItem.querySelector(".main__featured-title").href =
+      `detail.html?id=${featuredProduct.id}`;
     featuredItem.querySelector(".main__featured-rating").textContent =
       featuredProduct.rating;
     featuredItem.querySelector(".main__featured-price").textContent =
