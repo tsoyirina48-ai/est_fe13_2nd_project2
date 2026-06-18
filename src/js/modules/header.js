@@ -191,3 +191,7 @@ if (colorSchemeSelectorEl) {
   // store the new preference.
   colorSchemeSelectorEl.addEventListener("input", storeColorSchemePreference);
 }
+
+import { updateCartCount } from "../utils/common.js";
+
+updateCartCount();
