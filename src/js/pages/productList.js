@@ -40,7 +40,6 @@ async function fetchProducts() {
     // const data = await res.json();
     products = productData.products;
     filteredData = products;
-    console.log(filteredData);
     updateCountPerPage();
     renderPagination(filteredData.length);
 
