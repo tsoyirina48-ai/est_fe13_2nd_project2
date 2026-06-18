@@ -241,6 +241,49 @@ main > section {
   border-radius: 0.5rem;
 }
 
+.main__review-heading-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__review-heading-group button {
+  all: unset;
+  color: var(--on-background);
+  cursor: pointer;
+}
+
+.main__review-heading-group button:focus-visible {
+  outline: 4px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.modal__review__container {
+  padding: 0.25rem;
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.modal__rating__container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.modal__rating__container svg {
+  fill: var(--primary);
+}
+
+.main__review-button--close {
+  all: unset;
+  display: block;
+  padding: 12px 24px;
+  margin-inline: auto;
+  margin-top: 0.75rem;
+  color: var(--on-secondary-container);
+  background-color: var(--secondary-container);
+  border-radius: 0.5rem;
+}
+
 .main__review .auto-grid {
   --min-col-size: calc(42.5rem / 3);
 }
