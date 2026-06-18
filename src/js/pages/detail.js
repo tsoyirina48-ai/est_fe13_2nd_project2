@@ -44,7 +44,7 @@ function createContent(data) {
     category = document.querySelectorAll(".product-category"),
     origin_price = document.querySelector(".product-price"),
     discount_badge = document.querySelector(".discount-badge"),
-    mainImage = document.querySelector(".main-image img"),
+    mainImages = document.querySelectorAll(".main-image img"),
     thumbnailImages = document.querySelectorAll(".product-thumbnails img"),
     brand = document.querySelectorAll(".product-brand"),
     rating = document.querySelectorAll(".rating-score"),
@@ -78,10 +78,12 @@ function createContent(data) {
   }
 
   //이미지
-  mainImage.setAttribute("src", data.thumbnail);
-  mainImage.setAttribute("alt", data.title);
-  thumbnailImages[0].setAttribute("src", data.thumbnailMin);
+  mainImages.forEach(m => {
+    m.setAttribute("src", data.thumbnail);
+    m.setAttribute("alt", data.title);
+  });
   thumbnailImages.forEach(t => {
+    t.setAttribute("src", data.thumbnailMin);
     t.setAttribute("alt", `${data.title} 썸네일`);
   });
 
