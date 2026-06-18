@@ -94,6 +94,10 @@ function createContent(data) {
   renderStars(tabStars, Number(data.rating));
 
   color.textContent = data.color;
+
+  //상세설명
+  const aboutText = document.querySelector(".About p");
+  aboutText.textContent = getBrandDescription(data.brand);
 }
 
 function renderStars(starContainer, score) {
@@ -229,3 +233,56 @@ const lastCategory = document.querySelector(".detail_category .product-brand");
 lastCategory.addEventListener("click", e => {
   e.preventDefault();
 });
+
+// 브랜드별 상세 설명 추가
+function getBrandDescription(brand) {
+  switch (brand) {
+    case "RAY-BAN":
+      return `클래식은 영원하다, 레이밴 SINCE 1937. 시간이 증명하는 글로벌 아이웨어 브랜드. '빛(Ray)을 막아준다(Ban)'는 이름처럼 선글라스 본연의 역할에 집중하며 누구나 어울리는 클래식한 디자인을 선보입니다.`;
+
+    case "BLIZ":
+      return `블리츠는 2007년 스웨덴에서 시작된 스포츠 아이웨어 브랜드로 북유럽 시장에서 인기가 높으며 특히 크로스 컨트리 스키 선수들의 좋은 평가를 받으며 단기간에 브랜드 명성을 쌓았습니다.`;
+
+    case "PUBLIC BEACON":
+      return `퍼블릭비컨은 문화와 예술을 재해석해 새로운 스타일로 승화한 패션 아이웨어 브랜드입니다. 클래식과 모던을 아우르는 감각적인 디자인으로 셀럽은 물론, 다양한 연령대에서 사랑받고 있어요.`;
+
+    case "MUSEUM BY BEACON":
+      return `시간을 초월하는 가치의 빛남을 일깨워주는 클래식. 뮤지엄바이비컨은 그런 클래식 작품이 모여 있는 박물관을 꿈꿉니다. 세월이 흘러도 고유한 매력을 풍기는 스타일을 만나보세요.`;
+
+    case "FAKEME":
+      return `페이크미의 제품은 트렌드를 쫓지 않고 미의 다양성을 이야기합니다. 온전히 당신다움으로 충분히 아름답다는 메시지를 전달함과 동시에 스스로를 찾아가는 영감이 되는 것을 목표로 합니다.`;
+
+    case "RUDY PROJECT":
+      return `1985년에 탄생한 스포츠글라스 전문 브랜드 루디 프로젝트는 제품의 기획, 디자인, 생산, 마케팅까지 모두 이태리에서 이루어지는 명품 브랜드 입니다.`;
+
+    case "OAKLEY":
+      return `고도의 광학기술과 첨단 디자인을 융합시킨 세계 최고의 브랜드 오클리. 누구도 따라할 수 없는 독창적인 고성능 아이웨어를 선보입니다.`;
+
+    case "PRADA":
+      return `오랜역사를 가지고 있는 세계적인 명품패션 브랜드 프라다. 유행을 따라가지 않고 프라다만의 우아함, 도시적이고 심플한 이미지를 아이웨어에서도 보여주고 있습니다.`;
+
+    case "LE SPECS":
+      return `호주 Sunshade사의 브랜드로 섹시한 색감과 유니크한 디자인의 선글라스를 부담없는 가격에 판매함으로써 호주 국민 아이웨어라 불리며 많은 사랑을 받고 있습니다. 국내에서도 많은 셀럽들이 선택하여 패션 아이웨어로 자리를 차지하고 있습니다.`;
+
+    case "STYLE:WORK":
+      return `개인의 취향을 중시 여기는 동시에 가장 중요한 것은 밸런스를 잃지 않는 것입니다. 탄탄한 밸런스로 설계된 아이웨어로 데일리 스타일을 완성하세요.`;
+
+    case "ROUNZ BASIC":
+      return `고급안경은 가격이 부담되고, 저가안경은 퀄리티가 실망스러웠나요? 기본은 탄탄하게, 하지만 가격 부담은 적게. 라운즈 베이직으로 더 나은 안경라이프를 누리세요`;
+
+    case "VEDI VERO":
+      return `이탈리아어로 ‘진실을 보다(See the Truth)’란 의미의 베디베로. 베디베로를 통해 사람들이 진실을 마주하고 진정성을 담아 만든다는 철학으로 탄생했습니다. 타협하지 않는 퀄리티의 재료와 뛰어난 만듦새를 통해 독창적인 디자인은 물론 편안한 착용감을 선사합니다.`;
+
+    case "HEISTER":
+      return `하이스터 아이웨어는 착용자 원하는 얼굴표현을 마치 영화처럼 훔쳐내어 제공하고자 합니다. 세상을 강탈하듯 자신의 스타일과 서사를 찾으세요. 하이스터는 당신이 원하는 변화를 만듭니다.`;
+
+    case "NINE ACCORD":
+      return `클래식과 새로운 것을 개발하고 방대한 안경 지식과 전문지식의 스펙트럼을 반영하여 아름답고 독창적인 디자인을 만들어가고 있습니다.`;
+
+    case "NISHIDE KAZUO":
+      return `일본 후쿠이 사바에의 40년 안경인 니시데카즈오, 자신의 이름을 건 브랜드로 핸드메이드 티타늄 컬렉션을 선보이며, 여러 브랜드의 안경들이 넘쳐나는 현대에 역행하듯 철저하게 필요한 부분을 깎아 착용했을때의 의식할 수 없을 정도로 가벼운 안경 과하지 않은 빈티지함과 모던함을 베이스로 둔 디자인이 특징인 브랜드입니다.`;
+
+    default:
+      return `브랜드 소개 정보가 준비 중입니다.`;
+  }
+}

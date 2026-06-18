@@ -72,6 +72,10 @@ a {
   color: var(--detail-body);
 }
 
+.detail_product_right .product-brand-like a span {
+  color: var(--tertiary);
+}
+
 .product-title {
   color: var(--secondary);
 }
