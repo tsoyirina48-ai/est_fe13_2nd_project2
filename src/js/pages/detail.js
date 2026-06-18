@@ -1,5 +1,6 @@
 import "modern-normalize";
 import "../../css/style.css";
+import productData from "../../../data/products.json";
 
 import "../modules/header.js";
 import "../modules/footer.js";
@@ -18,23 +19,16 @@ let product = {};
 
 //URLSearchParams mdn
 //url 생성자에 전달된 주소를 url.search를 통해 params라는 변수로 검색
-export async function fetchProduct() {
-  //console.log(location.href); //http://127.0.0.1:5500/detail.html?id=3
-  //console.log(location.search); //?id=3
+function fetchProduct() {
   const params = new URLSearchParams(location.search);
-  //console.log(params.get("id")); // 3
-  const productID = params.get("id"); //3
+  const productID = params.get("id");
   if (!productID) {
     alert("잘못된 접근입니다. 홈으로 이동하겠습니다.");
     location.href = "./index.html";
   }
   try {
-    const res = await fetch("/data/products.json");
-    if (!res.ok) throw new Error("로딩에 실패했습니다.");
-    const data = await res.json();
-    console.log(data);
-    //조회된 상품정보에서 상품의 id가 productID와 일치하는 요소를 변수 product 할당
-    product = data.products.find(p => p.id === Number(productID));
+    product = productData.products.find(p => p.id === Number(productID));
+    console.log(product);
     createContent(product);
     createRecommendLists(data.products, product.category);
   } catch (e) {
@@ -43,6 +37,7 @@ export async function fetchProduct() {
     console.log("조회를 종료했습니다.");
   }
 }
+fetchProduct();
 
 function createContent(data) {
   const title = document.querySelector("#product-title"),
@@ -56,15 +51,66 @@ function createContent(data) {
     color = document.querySelector(".product-color");
 
   title.textContent = data.title;
-  category.textContent = data.category;
-  desc.textContent = data.description;
-  origin_price.textContent = (
-    data.price /
-    (1 - data.discountPercentage / 100)
-  ).toFixed(2);
-  sale_price.textContent = data.price;
-  discount_rate.textContent = data.discountPercentage;
-  mainImage.setAttribute("src", data.images[0]);
+
+  //카테고리별 구현 및 이동
+  const categoryActions = {
+    sunglasses: "showSunglasses",
+    lens: "showLens",
+    accessory: "showAccessory",
+    eyewear: "showEyewear",
+  };
+  category.forEach(c => {
+    c.textContent = data.category;
+    const action = categoryActions[data.category];
+    if (action) {
+      c.href = `./productList.html?action=${action}`;
+    }
+  });
+
+  if (data.sale_rate === 0) {
+    origin_price.textContent = `${data.price.toLocaleString()}원`;
+    discount_badge.style.visibility = "hidden";
+  } else {
+    const sale_price = data.price / ((100 - data.sale_rate) / 100);
+    origin_price.textContent = `${Math.round(sale_price).toLocaleString()}원`;
+    discount_badge.textContent = data.sale_rate;
+  }
+
+  mainImage.setAttribute("src", data.thumbnail);
+  thumbnailImages[0].setAttribute("src", data.thumbnailMin);
+
+  brand.forEach(b => {
+    b.textContent = data.brand;
+  });
+
+  rating.forEach(r => {
+    r.textContent = Number(data.rating).toFixed(1);
+  });
+
+  //별점
+  const productStars = document.querySelector(".product-rating");
+  const tabStars = document.querySelector(".review-score");
+  renderStars(productStars, Number(data.rating));
+  renderStars(tabStars, Number(data.rating));
+
+  color.textContent = data.color;
+}
+
+function renderStars(starContainer, score) {
+  const starIcons = starContainer.querySelectorAll(".stars .material-icons");
+  const roundedScore = Math.round(score * 2) / 2;
+
+  starIcons.forEach((star, index) => {
+    const starNumber = index + 1;
+
+    if (roundedScore >= starNumber) {
+      star.textContent = "star";
+    } else if (roundedScore >= starNumber - 0.5) {
+      star.textContent = "star_half";
+    } else {
+      star.textContent = "star_border";
+    }
+  });
 }
 
 // 상품 정보 탭 구현
@@ -176,5 +222,10 @@ buyNow.addEventListener("click", e => {
 });
 const share = document.querySelector(".share");
 share.addEventListener("click", e => {
+  e.preventDefault();
+});
+
+const lastCategory = document.querySelector(".detail_category .product-brand");
+lastCategory.addEventListener("click", e => {
   e.preventDefault();
 });

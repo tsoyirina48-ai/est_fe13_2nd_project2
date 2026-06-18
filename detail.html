@@ -64,12 +64,12 @@
             </h1>
 
             <div class="product-rating text-body-large">
-              <div class="stars" aria-label="4.8점">
-                <span class="material-icons">star</span>
-                <span class="material-icons">star</span>
-                <span class="material-icons">star</span>
-                <span class="material-icons">star</span>
-                <span class="material-icons">star</span>
+              <div class="stars" aria-label="별점">
+                <span class="material-icons"></span>
+                <span class="material-icons"></span>
+                <span class="material-icons"></span>
+                <span class="material-icons"></span>
+                <span class="material-icons"></span>
               </div>
               <span class="rating-score">5.0</span>
               <span class="rating-count">3개의 후기</span>
@@ -107,7 +107,13 @@
               <label class="text-title-medium">Quantity</label>
               <div class="quantity-control">
                 <button type="button" aria-label="수량 줄이기">-</button>
-                <input id="quantity" type="text" value="1" aria-label="수량">
+                <input
+                  id="quantity"
+                  type="text"
+                  value="1"
+                  aria-label="수량"
+                  readonly
+                >
                 <button type="button" aria-label="수량 늘리기">+</button>
               </div>
             </div>
@@ -213,7 +219,13 @@
 
             <div class="review-count">
               <div class="review-score">
-                <span class="material-icons">star star star star star</span>
+                <div class="stars" aria-label="별점">
+                  <span class="material-icons"></span>
+                  <span class="material-icons"></span>
+                  <span class="material-icons"></span>
+                  <span class="material-icons"></span>
+                  <span class="material-icons"></span>
+                </div>
                 <strong class="rating-score text-title-large">5.0</strong>
               </div>
               <p class="text-body-large">총 3개의 후기</p>
