@@ -148,6 +148,23 @@
   opacity: 0;
 }
 
+.cart__select-all-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.cart__select-all-checkbox:checked
+  + .cart__select-all-label
+  .cart__checkbox-icon--unchecked {
+  display: none;
+}
+
+.cart__select-all-checkbox:checked
+  + .cart__select-all-label
+  .cart__checkbox-icon--checked {
+  display: block;
+}
+
 .cart__checkbox-icon--checked {
   display: none;
 }
