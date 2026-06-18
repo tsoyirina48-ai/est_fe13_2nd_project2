@@ -1,25 +1,7 @@
 /* Layout */
 .wrapper {
-  width: min(100% - 2.5rem, var(--wrapper-max-width, 27.5rem));
+  width: min(100% - 40px, 75rem);
   margin-inline: auto;
-}
-
-@media (min-width: 30rem) {
-  .wrapper {
-    --wrapper-max-width: 45.5rem;
-  }
-}
-
-@media (min-width: 48rem) {
-  .wrapper {
-    --wrapper-max-width: 72.5rem;
-  }
-}
-
-@media (min-width: 75rem) {
-  .wrapper {
-    --wrapper-max-width: 75rem;
-  }
 }
 
 /* Typography */

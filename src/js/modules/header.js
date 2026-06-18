@@ -25,23 +25,29 @@ function renderHeader() {
         </select>
         <ul class="site__nav__actions" role="list">
           <li>
-            <a href="#"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><span class="visually-hidden">프로필</span></a>
-          </li>
-          <li>
-            <a href="/est_fe13_2nd_project/cart.html" class="pile">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/><span class="visually-hidden">장바구니</span></svg>
-              <span class="cart__counter badge">1</span>
+            <a href="/est_fe13_2nd_project/login.html">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+              <span class="visually-hidden">프로필</span>
             </a>
           </li>
           <li>
+            <a href="/est_fe13_2nd_project/cart.html" class="pile">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+              <span class="visually-hidden">장바구니</span>
+              <span class="cart__counter badge">1</span>
+            </a>
+          </li>
         </ul>
         <div class="site__nav__content" inert>
-          <button class="site__nav__close" aria-label="메뉴 닫기">닫기</button>
+          <button class="site__nav__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="visually-hidden">메뉴 닫기</span>
+          </button>
           <ul role="list">
-            <li><a href="#">선글라스</a></li>
-            <li><a href="#">렌즈</a></li>
-            <li><a href="#">액세서리</a></li>
-            <li><a href="#">아이웨어</a></li>
+            <li><a href="/est_fe13_2nd_project/productList.html?action=showSunglasses">선글라스</a></li>
+            <li><a href="/est_fe13_2nd_project/productList.html?action=showLens">렌즈</a></li>
+            <li><a href="/est_fe13_2nd_project/productList.html?action=showAccessory">액세서리</a></li>
+            <li><a href="/est_fe13_2nd_project/productList.html?action=showEyewear">아이웨어</a></li>
 				  </ul>
         </div>
       </nav>

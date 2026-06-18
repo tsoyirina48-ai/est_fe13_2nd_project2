@@ -7,6 +7,11 @@ main > section {
   padding-block: 28px;
 }
 
+.hero .wrapper {
+  container-name: hero-img;
+  container-type: inline-size;
+}
+
 .hero__heading-group {
   z-index: 2;
   display: flex;
@@ -40,7 +45,7 @@ main > section {
 .swiper {
   --swiper-navigation-color: rgb(63 68 123);
   --swiper-pagination-color: rgb(63 68 123);
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 16 / 9;
   margin-inline: auto;
 }
@@ -56,6 +61,20 @@ main > section {
 .swiper img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+@container hero-img (width < 400px) {
+  .hero__heading-group {
+    gap: 0.25rem;
+  }
+
+  .hero__heading-group h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .hero__heading-group p {
+    text-wrap: balance;
+  }
 }
 
 .info .tabs__container {
@@ -132,7 +151,7 @@ main > section {
 }
 
 .main__featured .auto-grid {
-  --min-col-size: calc(67.5rem / 6);
+  --min-col-size: 180px;
   --overflow-prevent: calc((100% - var(--gap-size)) / 2);
 }
 

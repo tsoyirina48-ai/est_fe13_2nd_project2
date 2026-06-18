@@ -48,6 +48,7 @@ async function fetchProducts() {
     renderColors();
     renderPrices();
     initFilterEvents();
+    applyUrlFilter();
   } catch {
   } finally {
   }
@@ -529,3 +530,5 @@ window.addEventListener("resize", () => {
     }
   }, 150);
 });
+
+import { applyUrlFilter } from "../modules/categoryLink.js";
