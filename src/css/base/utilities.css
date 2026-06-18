@@ -119,7 +119,7 @@
 /* 커스텀 체크박스 */
 .custom-checkbox {
   --checked-state-bg-color: var(--primary);
-  --checked-state-check-color: #fff;
+  --checked-state-check-color: var(--on-primary);
   --outline-color: var(--primary);
   --outline-offset: 2px;
 
