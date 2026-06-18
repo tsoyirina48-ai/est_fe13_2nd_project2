@@ -79,7 +79,11 @@ function createContent(data) {
 
   //이미지
   mainImage.setAttribute("src", data.thumbnail);
+  mainImage.setAttribute("alt", data.title);
   thumbnailImages[0].setAttribute("src", data.thumbnailMin);
+  thumbnailImages.forEach(t => {
+    t.setAttribute("alt", `${data.title} 썸네일`);
+  });
 
   brand.forEach(b => {
     b.textContent = data.brand;
@@ -101,6 +105,14 @@ function createContent(data) {
   //상세설명
   const aboutText = document.querySelector(".About p");
   aboutText.textContent = getBrandDescription(data.brand);
+
+  // 스타일
+  const style = document.querySelector(".product-style");
+  style.textContent = getProductStyle(data);
+
+  // 소재
+  const material = document.querySelector(".product-material");
+  material.textContent = getProductMaterial(data);
 }
 
 function renderStars(starContainer, score) {
@@ -295,4 +307,152 @@ function getBrandDescription(brand) {
     default:
       return `브랜드 소개 정보가 준비 중입니다.`;
   }
+}
+
+// 상품 STYLE
+function getProductStyle(product) {
+  const title = product.title.toUpperCase();
+  const brand = product.brand.toUpperCase();
+
+  // 스포츠 / 고글 계열
+  if (
+    title.includes("고글") ||
+    title.includes("스포츠") ||
+    title.includes("컷라인") ||
+    title.includes("스핀에어") ||
+    title.includes("수트로") ||
+    title.includes("홀브룩") ||
+    title.includes("아이자켓") ||
+    brand === "BLIZ" ||
+    brand === "RUDY PROJECT" ||
+    brand === "OAKLEY"
+  ) {
+    return "Sporty";
+  }
+
+  // 형태가 확실한 제품
+  if (title.includes("캣아이")) {
+    return "Cat Eye";
+  }
+
+  if (title.includes("라운드")) {
+    return "Round";
+  }
+
+  if (title.includes("오벌")) {
+    return "Oval";
+  }
+
+  // 클립 / 렌즈 / 악세서리 계열
+  if (title.includes("CLIP") || title.includes("클립")) {
+    return "Clip-on";
+  }
+
+  if (title.includes("렌즈")) {
+    return "Lens";
+  }
+
+  // 패션 아이웨어 성향 브랜드
+  if (
+    brand === "PRADA" ||
+    brand === "LE SPECS" ||
+    brand === "VEDI VERO" ||
+    brand === "PUBLIC BEACON" ||
+    brand === "MUSEUM BY BEACON" ||
+    brand === "FAKEME" ||
+    brand === "HEISTER"
+  ) {
+    return "Fashion";
+  }
+
+  // 클래식 성향 브랜드
+  if (
+    brand === "RAY-BAN" ||
+    brand === "ROUNZ BASIC" ||
+    brand === "STYLE:WORK" ||
+    brand === "NINE ACCORD" ||
+    brand === "NISHIDE KAZUO"
+  ) {
+    return "Classic";
+  }
+
+  return "Classic";
+}
+
+// 상품 Material
+function getProductMaterial(product) {
+  const title = product.title.toUpperCase();
+  const brand = product.brand.toUpperCase();
+  const category = product.category.toLowerCase();
+
+  // 렌즈 단독 상품
+  if (category === "lens" || title.includes("렌즈")) {
+    return "Lens";
+  }
+
+  // 클립 악세서리
+  if (title.includes("CLIP") || title.includes("클립")) {
+    return "Metal";
+  }
+
+  // 티타늄 계열
+  if (
+    title.includes("베타티타늄") ||
+    title.includes("티타늄") ||
+    title.startsWith("TI ") ||
+    brand === "NISHIDE KAZUO"
+  ) {
+    return "Titanium";
+  }
+
+  // 메탈 계열
+  if (
+    title.includes("메탈") ||
+    title.includes("하금테") ||
+    title.includes("실버") ||
+    title.includes("골드")
+  ) {
+    return "Metal";
+  }
+
+  // TR90 소재
+  if (title.includes("TR90")) {
+    return "TR90";
+  }
+
+  // 아세테이트 / 뿔테 계열
+  if (
+    title.includes("아세테이트") ||
+    title.includes("하바나") ||
+    title.includes("톨토이즈") ||
+    title.includes("데미브라운")
+  ) {
+    return "Acetate";
+  }
+
+  // 스포츠 고글 계열은 보통 가벼운 플라스틱/나일론 프레임 느낌
+  if (
+    title.includes("고글") ||
+    title.includes("스포츠") ||
+    brand === "BLIZ" ||
+    brand === "OAKLEY" ||
+    brand === "RUDY PROJECT"
+  ) {
+    return "Plastic";
+  }
+
+  // 패션 선글라스 브랜드 기본값
+  if (
+    brand === "PUBLIC BEACON" ||
+    brand === "MUSEUM BY BEACON" ||
+    brand === "FAKEME" ||
+    brand === "LE SPECS" ||
+    brand === "VEDI VERO" ||
+    brand === "HEISTER" ||
+    brand === "PRADA"
+  ) {
+    return "Acetate";
+  }
+
+  return "Plastic";
 }
