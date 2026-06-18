@@ -1,5 +1,6 @@
 import "modern-normalize";
 import "../../css/style.css";
+import productData from "../../../data/products.json";
 
 import "../modules/header.js";
 import "../../js/modules/footer.js";
@@ -35,11 +36,10 @@ const STAR_EMPTY = `<svg class="product-card__star product-card__star--empty" ar
 
 async function fetchProducts() {
   try {
-    const res = await fetch("/est_fe13_2nd_project/data/products.json");
-    const data = await res.json();
-    products = data.products;
+    // const res = await fetch("/est_fe13_2nd_project/data/products.json");
+    // const data = await res.json();
+    products = productData.products;
     filteredData = products;
-    console.log(filteredData);
     updateCountPerPage();
     renderPagination(filteredData.length);
 
