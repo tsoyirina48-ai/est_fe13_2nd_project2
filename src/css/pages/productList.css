@@ -103,6 +103,17 @@
   border-radius: 20px;
 }
 
+.product-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card__image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .product-card__image-container {
   position: relative;
   width: 100%;

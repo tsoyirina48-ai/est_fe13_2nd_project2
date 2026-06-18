@@ -4,6 +4,7 @@ import "../../css/style.css";
 import "../modules/header.js";
 import "../../js/modules/footer.js";
 import "../../css/pages/productList.css";
+import { addToCart, updateCartCount } from "../utils/common.js";
 
 const productGrid = document.querySelector(".grid");
 const paginationContainer = document.querySelector(".pagination");
@@ -34,7 +35,7 @@ const STAR_EMPTY = `<svg class="product-card__star product-card__star--empty" ar
 
 async function fetchProducts() {
   try {
-    const res = await fetch("./data/products.json");
+    const res = await fetch("/est_fe13_2nd_project/data/products.json");
     const data = await res.json();
     products = data.products;
     filteredData = products;
@@ -79,14 +80,16 @@ function renderProducts(data) {
 
     return `<article class="product-card">
           <div class="product-card__image-container">
-            <img
-              class="product-card__image"
-              src="${p.thumbnail}"
-              alt="${p.title}"
-              loading="lazy"
-            >
+            <a href="detail.html?id=${p.id}" class="product-card__image-link">
+              <img
+                class="product-card__image"
+                src="${p.thumbnail}"
+                alt="${p.title}"
+                loading="lazy"
+              >
+            </a>
             ${badgeHTML}
-            <button type="button" class="product-card__cart-button" aria-label="장바구니 담기">
+            <button type="button" class="product-card__cart-button" data-id="${p.id}" aria-label="장바구니 담기">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart">
                 <circle cx="8" cy="21" r="1"/>
                 <circle cx="19" cy="21" r="1"/>
@@ -96,7 +99,9 @@ function renderProducts(data) {
           </div>
           <div class="product-card__content">
             <p class="product-card__brand">${p.brand}</p>
-            <h3 class="product-card__title">${p.title}</h3>
+            <h3 class="product-card__title">
+              <a href="detail.html?id=${p.id}">${p.title}</a>
+            </h3>
             <div class="product-card__tags">
               ${p.category ? `<span class="product-card__tag">${p.category}</span>` : ""}
               ${p.color ? `<span class="product-card__tag">${p.color}</span>` : ""}
@@ -105,9 +110,9 @@ function renderProducts(data) {
               ${generateStarRating(p.rating)}
             </div>
             ${priceHTML}
-            <div class="product-card__view-details">
+            <a href="detail.html?id=${p.id}" class="product-card__view-details">
               View Details &rsaquo;
-            </div>
+            </a>
           </div>
         </article>`;
   });
@@ -530,5 +535,16 @@ window.addEventListener("resize", () => {
     }
   }, 150);
 });
+//장바구니에 추가
+productGrid.addEventListener("click", e => {
+  const btn = e.target.closest("button");
+  if (!btn) return;
+
+  const pid = Number(btn.dataset.id);
+  const product = products.find(p => p.id === pid);
+  addToCart(product);
+});
+
+updateCartCount();
 
 import { applyUrlFilter } from "../modules/categoryLink.js";
