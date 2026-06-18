@@ -67,15 +67,17 @@ function createContent(data) {
     }
   });
 
+  //가격
   if (data.sale_rate === 0) {
     origin_price.textContent = `${data.price.toLocaleString()}원`;
     discount_badge.style.visibility = "hidden";
   } else {
     const sale_price = data.price / ((100 - data.sale_rate) / 100);
     origin_price.textContent = `${Math.round(sale_price).toLocaleString()}원`;
-    discount_badge.textContent = data.sale_rate;
+    discount_badge.textContent = `-${data.sale_rate}%`;
   }
 
+  //이미지
   mainImage.setAttribute("src", data.thumbnail);
   thumbnailImages[0].setAttribute("src", data.thumbnailMin);
 
@@ -83,11 +85,12 @@ function createContent(data) {
     b.textContent = data.brand;
   });
 
+  //평점
   rating.forEach(r => {
     r.textContent = Number(data.rating).toFixed(1);
   });
 
-  //별점
+  //평점-별
   const productStars = document.querySelector(".product-rating");
   const tabStars = document.querySelector(".review-score");
   renderStars(productStars, Number(data.rating));
