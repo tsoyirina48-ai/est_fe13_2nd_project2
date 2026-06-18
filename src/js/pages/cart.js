@@ -1,6 +1,10 @@
 import "../modules/header.js";
 import "../../js/modules/footer.js";
 
+import { addToCart, updateCartCount } from "../utils/common.js";
+
+updateCartCount();
+
 // const cartList = document.querySelector(".cart-list");
 // const cartCountText = document.querySelector(".cart-count-text");
 // const selectAll = document.querySelector(".select-all");
