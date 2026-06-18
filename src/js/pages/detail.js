@@ -12,10 +12,64 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "../../css/pages/detail.css";
 
-const tabs = document.querySelectorAll(".tabs a");
-const detailContents = document.querySelectorAll(".detail-content");
+import { addToCart } from "../utils/common.js";
+
+let product = {};
+
+//URLSearchParams mdn
+//url 생성자에 전달된 주소를 url.search를 통해 params라는 변수로 검색
+export async function fetchProduct() {
+  //console.log(location.href); //http://127.0.0.1:5500/detail.html?id=3
+  //console.log(location.search); //?id=3
+  const params = new URLSearchParams(location.search);
+  //console.log(params.get("id")); // 3
+  const productID = params.get("id"); //3
+  if (!productID) {
+    alert("잘못된 접근입니다. 홈으로 이동하겠습니다.");
+    location.href = "./index.html";
+  }
+  try {
+    const res = await fetch("/data/products.json");
+    if (!res.ok) throw new Error("로딩에 실패했습니다.");
+    const data = await res.json();
+    console.log(data);
+    //조회된 상품정보에서 상품의 id가 productID와 일치하는 요소를 변수 product 할당
+    product = data.products.find(p => p.id === Number(productID));
+    createContent(product);
+    createRecommendLists(data.products, product.category);
+  } catch (e) {
+    console.log(e);
+  } finally {
+    console.log("조회를 종료했습니다.");
+  }
+}
+
+function createContent(data) {
+  const title = document.querySelector("#product-title"),
+    category = document.querySelectorAll(".product-category"),
+    origin_price = document.querySelector(".product-price"),
+    discount_badge = document.querySelector(".discount-badge"),
+    mainImage = document.querySelector(".main-image img"),
+    thumbnailImages = document.querySelectorAll(".product-thumbnails img"),
+    brand = document.querySelectorAll(".product-brand"),
+    rating = document.querySelectorAll(".rating-score"),
+    color = document.querySelector(".product-color");
+
+  title.textContent = data.title;
+  category.textContent = data.category;
+  desc.textContent = data.description;
+  origin_price.textContent = (
+    data.price /
+    (1 - data.discountPercentage / 100)
+  ).toFixed(2);
+  sale_price.textContent = data.price;
+  discount_rate.textContent = data.discountPercentage;
+  mainImage.setAttribute("src", data.images[0]);
+}
 
 // 상품 정보 탭 구현
+const tabs = document.querySelectorAll(".tabs a");
+const detailContents = document.querySelectorAll(".detail-content");
 tabs.forEach(t => {
   t.addEventListener("click", e => {
     e.preventDefault();
@@ -65,8 +119,9 @@ thumbnails.forEach((thumbnail, index) => {
 });
 
 // 좋아요 버튼
-const favorite = document.querySelector(".product-brand a span");
-favorite.addEventListener("click", () => {
+const favorite = document.querySelector(".product-brand-like a span");
+favorite.addEventListener("click", e => {
+  e.preventDefault();
   favorite.classList.toggle("active");
   if (favorite.classList.contains("active")) {
     favorite.textContent = "favorite";
