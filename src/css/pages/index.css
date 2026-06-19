@@ -248,9 +248,11 @@ main > section {
 }
 
 .main__review-heading-group button {
-  all: unset;
+  padding: 0;
   color: var(--on-background);
   cursor: pointer;
+  background: none;
+  border: 0.1em solid transparent;
 }
 
 .main__review-heading-group button:focus-visible {

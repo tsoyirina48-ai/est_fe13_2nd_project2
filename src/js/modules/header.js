@@ -1,5 +1,6 @@
 const siteHeader = document.querySelector(".site__header");
-function renderHeader() {
+export function renderHeader() {
+ 
   siteHeader.innerHTML = /* HTML */ `
     <div class="wrapper">
       <a href="#content" class="skip-link visually-hidden">컨텐츠로 바로가기</a>
@@ -14,7 +15,7 @@ function renderHeader() {
             </button>
           </li>
           <li>
-            <a href="/est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
+            <a href="./est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
           </li>
         </ul>
         <label for="theme" class="visually-hidden">화면 테마 변경</label>
@@ -54,9 +55,8 @@ function renderHeader() {
     </div>
   `;
 }
-renderHeader();
-initNav();
-function initNav() {
+
+export function initNav() {
   const nav = document.querySelector(".site__nav");
   // nav.classList.add("enhanced");
   const navButton = document.querySelector(".site__nav__toggle");
@@ -66,6 +66,9 @@ function initNav() {
   const main = document.querySelector("main");
   const footer = document.querySelector("footer");
   const siblings = document.querySelectorAll(".wrapper > *:not(nav)");
+  const drawerSiblings = document.querySelectorAll(
+    ".site__nav > *:not(.site__nav__content)",
+  );
 
   navCloseBtn.addEventListener(
     "click",
@@ -113,7 +116,11 @@ function initNav() {
     }
 
     for (let i = 0; i < siblings.length; i++) {
-      siblings[i].setAttribute("inert", "true");
+      siblings[i].setAttribute("inert", "");
+    }
+
+    for (let i = 0; i < drawerSiblings.length; i++) {
+      drawerSiblings[i].setAttribute("inert", "");
     }
   }
 
@@ -127,6 +134,10 @@ function initNav() {
 
     for (let i = 0; i < siblings.length; i++) {
       siblings[i].removeAttribute("inert");
+    }
+
+    for (let i = 0; i < drawerSiblings.length; i++) {
+      drawerSiblings[i].removeAttribute("inert");
     }
   }
 

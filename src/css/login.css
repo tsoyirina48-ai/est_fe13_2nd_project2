@@ -4,16 +4,14 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
 main {
   flex: 1;
 }
-footer {
-  flex-shrink: 0;
-}
-
 
 .login {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 80px 20px;
 }
@@ -38,7 +36,7 @@ footer {
   gap: 16px;
 }
 
-.login-form label {
+.auth__field label {
   display: block;
   margin-bottom: 4px;
 }
@@ -77,12 +75,12 @@ footer {
   border-radius: var(--radius);
 }
 
-.login-link {
+.auth__link {
   margin: 24px 0;
   text-align: center;
 }
 
-.login-link a {
+.auth__link a {
   font-weight: 600;
   color: var(--primary);
   text-decoration: none;
@@ -104,7 +102,7 @@ footer {
 .auth__social--naver {
   margin-bottom: 12px;
   color: #ffffff;
-  background-color: #03A94D;
+  background-color: #03a94d;
 }
 
 .auth__social--kakao {

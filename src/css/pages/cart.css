@@ -129,11 +129,6 @@
 
   min-height: 120px;
   padding: 15px 10px 15px 10px;
-  /* margin-top: 15px;
-  margin-right: 10px;
-  margin-bottom: 15px;
-  margin-left: 10px; */
-
   background: var(--surface);
   border-radius: 16px;
   box-shadow: 0 0px 8px rgb(0 0 0 / 0.2);
@@ -301,16 +296,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* .cart__product {
-  background: red;
-}
-
-.cart__list {
-  display: block;
-  background: blue;
-}
-
-.cart__item {
-  background: green;
-} */

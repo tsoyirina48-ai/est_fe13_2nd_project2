@@ -1,16 +1,25 @@
+import "../../css/style.css";
+import "../../css/login.css";
 import "../modules/header.js";
 
-renderHeader();
 const form = document.querySelector(".login-form");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
 
 form?.addEventListener("submit", event => {
   event.preventDefault();
 
-  const email = document.querySelector("#email").value.trim();
-  const password = document.querySelector("#password").value.trim();
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
 
   if (!email || !password) {
-    alert("이메일과 비밀번호를 모두 입력해주세요.");
+    alert("이메일과 비밀번호를 모두 입력하세요.");
+    return;
+  }
+
+  if (!emailInput.validity.valid) {
+    alert("올바른 이메일 형식으로 입력하세요.");
+    emailInput.focus();
     return;
   }
 

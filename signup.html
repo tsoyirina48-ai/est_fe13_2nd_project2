@@ -7,39 +7,74 @@
     <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/signup.css">
 
-    <script type="module" src="/src/js/pages/login.js"></script>
+    <script type="module" src="./src/js/pages/signup.js"></script>
   </head>
   <body data-page="signup">
     <header class="site__header"></header>
-    <main class="signup">
-      <section class="signup-container">
-        <h1 class="text-headline-large">회원가입</h1>
-        <p class="text-body-large">ROUNZ 계정을 만들어 시작하세요</p>
+    <main id="content" class="signup">
+      <section class="signup-container" aria-labelledby="signup-heading">
+        <h1 id="signup-heading" class="text-headline-large">회원가입</h1>
+        <p class="text-body-large">ROUNZ 계정을 만들고 시작하세요.</p>
 
-        <form class="signup-form">
-          <label class="text-title-small">이름</label>
-          <input type="text" id="name" placeholder="이름을 입력해주세요">
+        <form class="signup-form" novalidate>
+          <div class="auth__field">
+            <label for="name" class="text-title-small">이름</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="이름을 입력하세요"
+              autocomplete="name"
+              required
+            >
+          </div>
 
-          <label class="text-title-small">이메일</label>
-          <input type="email" id="email" placeholder="이메일을 입력해주세요">
-          <label class="text-title-small">비밀번호</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="비밀번호를 입력해주세요"
-          >
-          <label class="text-title-small">비밀번호 확인</label>
-          <input
-            type="password"
-            id="password-confirm"
-            placeholder="비밀번호를 다시 입력해주세요"
-          >
+          <div class="auth__field">
+            <label for="email" class="text-title-small">이메일</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="이메일을 입력하세요"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="auth__field">
+            <label for="password" class="text-title-small">비밀번호</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호를 입력하세요"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+          </div>
+
+          <div class="auth__field">
+            <label for="password-confirm" class="text-title-small">
+              비밀번호 확인
+            </label>
+            <input
+              type="password"
+              id="password-confirm"
+              name="password-confirm"
+              placeholder="비밀번호를 다시 입력하세요"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+          </div>
 
           <button type="submit" class="signup-btn">회원가입</button>
         </form>
 
-        <p class="text-body-medium">
+        <p class="auth__link text-body-medium">
           이미 계정이 있으신가요?
           <a href="./login.html">로그인</a>
         </p>
@@ -47,11 +82,11 @@
         <button
           type="button"
           class="auth__social auth__social--naver"
-          onclick="window.open('https://nid.naver.com/user2/join/agree', '_blank')"
+          onclick="window.open('https://nid.naver.com/user2/join/agree', '_blank', 'noopener')"
         >
           <img
             src="./src/assets/brand/logo_naver.svg"
-            alt="Naver Logo"
+            alt=""
             width="20"
             height="20"
           >
@@ -60,11 +95,11 @@
         <button
           type="button"
           class="auth__social auth__social--kakao"
-          onclick="window.open('https://accounts.kakao.com/weblogin/create_account', '_blank')"
+          onclick="window.open('https://accounts.kakao.com/weblogin/create_account', '_blank', 'noopener')"
         >
           <img
             src="./src/assets/brand/logo_kakao.svg"
-            alt="Kakao Logo"
+            alt=""
             width="26"
             height="24"
           >
@@ -72,6 +107,5 @@
         </button>
       </section>
     </main>
-    <footer class="site__footer"></footer>
   </body>
 </html>
