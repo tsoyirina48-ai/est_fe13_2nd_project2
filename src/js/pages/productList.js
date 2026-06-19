@@ -50,7 +50,11 @@ async function fetchProducts() {
     renderPrices();
     initFilterEvents();
     applyUrlFilter();
-  } catch {
+  } catch (error) {
+    console.error("Failed to load products:", error);
+    if (confirm("상품을 불러오는 데 실패했습니다. 다시 시도하시겠습니까?")) {
+      fetchProducts();
+    }
   } finally {
   }
 }
