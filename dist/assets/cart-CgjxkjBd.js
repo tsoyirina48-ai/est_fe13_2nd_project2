@@ -1,4 +1,4 @@
-import{n as e}from"./footer-D0eCpzNq.js";e();var t=new Set,n=document.querySelector(`.cart__select-all-checkbox`),r=document.querySelector(`.cart__delete-btn`);function i(){return JSON.parse(localStorage.getItem(`cart`))??[]}function a(e){localStorage.setItem(`cart`,JSON.stringify(e))}function o(){let e=i(),r=document.querySelector(`.cart__list`);r.innerHTML=``,r.innerHTML=e.map(e=>`
+import{n as e}from"./footer-DdQT0BLp.js";e();var t=new Set,n=document.querySelector(`.cart__select-all-checkbox`),r=document.querySelector(`.cart__delete-btn`);function i(){return JSON.parse(localStorage.getItem(`cart`))??[]}function a(e){localStorage.setItem(`cart`,JSON.stringify(e))}function o(){let e=i(),r=document.querySelector(`.cart__list`);r.innerHTML=``,r.innerHTML=e.map(e=>`
             <li class="cart__item">
               <input
                 type="checkbox"

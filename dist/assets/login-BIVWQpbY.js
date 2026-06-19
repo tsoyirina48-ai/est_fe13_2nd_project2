@@ -1,0 +1,1 @@
+import"./footer-DdQT0BLp.js";var e=document.querySelector(`.login-form`),t=document.querySelector(`#email`),n=document.querySelector(`#password`);e?.addEventListener(`submit`,e=>{e.preventDefault();let r=t.value.trim(),i=n.value.trim();if(!r||!i){alert(`이메일과 비밀번호를 모두 입력하세요.`);return}if(!t.validity.valid){alert(`올바른 이메일 형식으로 입력하세요.`),t.focus();return}alert(`로그인되었습니다.`)});

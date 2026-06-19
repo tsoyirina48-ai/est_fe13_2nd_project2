@@ -12,7 +12,7 @@
             </button>
           </li>
           <li>
-            <a href="./est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
+            <a href="/est_fe13_2nd_project/" class="site__nav__logo text-headline-small" id="site-nav-label">ROUNZ</a>
           </li>
         </ul>
         <label for="theme" class="visually-hidden">화면 테마 변경</label>
