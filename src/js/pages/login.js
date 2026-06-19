@@ -1,9 +1,6 @@
 import "../../css/style.css";
 import "../../css/login.css";
-import { initNav, renderHeader } from "../modules/header.js";
-
-renderHeader();
-initNav();
+import "../modules/header.js";
 
 const form = document.querySelector(".login-form");
 const emailInput = document.querySelector("#email");
@@ -28,3 +25,5 @@ form?.addEventListener("submit", event => {
 
   alert("로그인되었습니다.");
 });
+
+import "../modules/footer.js";

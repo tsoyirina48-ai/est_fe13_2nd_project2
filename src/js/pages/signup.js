@@ -1,9 +1,6 @@
 import "../../css/style.css";
 import "../../css/signup.css";
-import { initNav, renderHeader } from "../modules/header.js";
-
-renderHeader();
-initNav();
+import "../modules/header.js";
 
 const form = document.querySelector(".signup-form");
 const nameInput = document.querySelector("#name");
@@ -44,3 +41,5 @@ form?.addEventListener("submit", event => {
 
   alert("회원가입이 완료되었습니다.");
 });
+
+import "../modules/footer.js";
