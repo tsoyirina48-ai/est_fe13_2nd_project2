@@ -51,7 +51,7 @@
   cursor: pointer;
 }
 
-.nav-closeBtn {
+.site__nav__close {
   align-self: flex-end;
   width: max-content;
 }
@@ -69,8 +69,7 @@
 .site__nav__actions {
   display: flex;
   gap: 1em;
-  padding-left: 0;
-  margin-left: auto;
+  justify-self: end;
 }
 
 .site__nav__actions a {
@@ -79,17 +78,21 @@
   text-decoration: none;
 }
 
-.site__nav:has(.site__nav__toggle) .site__nav__content {
+.site__nav__content {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
   width: 75vw;
   max-width: 400px;
+  padding: 1rem 1.5rem;
   overflow-y: auto;
   background-color: var(--background);
-  box-shadow: 0 0 0 150vmax rgb(from var(--shadow) r g b / 0);
+  box-shadow: max(calc(100vw - 400px), 25vw) 0 0 max(calc(100vw - 400px), 25vw)
+    rgb(from var(--shadow) r g b / 0);
   transform: translateX(-100%);
   transition:
     transform 0.6s ease-out,
@@ -97,8 +100,24 @@
 }
 
 .site__nav:has(.site__nav__toggle[aria-expanded="true"]) .site__nav__content {
-  box-shadow: 0 0 0 150vmax rgb(from var(--shadow) r g b / 0.75);
+  box-shadow: max(calc(100vw - 400px), 25vw) 0 0 max(calc(100vw - 400px), 25vw)
+    rgb(from var(--shadow) r g b / 0.75);
   transform: translateX(0);
+}
+
+.site__nav__content li {
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.site__nav__content li:last-of-type {
+  border-bottom: none;
+}
+
+.site__nav__content a {
+  display: inline-block;
+  padding-block: 0.75rem;
+  color: var(--on-background);
+  text-decoration: none;
 }
 
 .cart__counter {
@@ -111,14 +130,4 @@
   color: var(--on-primary-container);
   background-color: var(--primary-container);
   border-radius: 50%;
-}
-.site__nav__content a {
-  display: block;
-  padding: 12px 24px;
-  font-size: 16px;
-  color: #333;
-  text-decoration: none;
-}
-.site__nav__content a:hover {
-  text-decoration: underline;
 }

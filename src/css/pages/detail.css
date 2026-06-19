@@ -64,12 +64,16 @@ a {
   flex-direction: column;
   gap: var(--base-unit);
 }
-.detail_product_right .product-brand {
+.detail_product_right .product-brand-like {
   display: flex;
   justify-content: space-between;
 }
-.detail_product_right .product-brand > span {
+.detail_product_right .product-brand-like > span {
   color: var(--detail-body);
+}
+
+.detail_product_right .product-brand-like a span {
+  color: var(--tertiary);
 }
 
 .product-title {
@@ -150,7 +154,7 @@ a {
   filter: brightness(85%);
 }
 
-.quantity-control div {
+#quantity {
   width: 100px;
   height: 50px;
   line-height: 50px;
@@ -167,31 +171,32 @@ a {
   width: 100%;
 }
 
-.product-actions a {
+.product-actions button {
   display: flex;
   gap: calc(var(--base-unit) / 2);
   align-items: center;
   justify-content: center;
   height: calc(var(--base-unit) * 2);
   color: var(--on-primary-container);
+  cursor: pointer;
   background: var(--primary-container);
   border-radius: 10px;
   transition: 0.3s;
 }
-.product-actions a span {
+.product-actions button span {
   line-height: calc(var(--base-unit) * 2);
 }
-.product-actions a:last-child {
+.product-actions button:last-child {
   color: var(--primary-container);
   background: var(--on-primary-container);
   border: 1px solid var(--primary-container);
 }
-.product-actions a:hover {
+.product-actions button:hover {
   color: var(--primary-container);
   background: var(--on-primary-container);
   border: 1px solid var(--primary-container);
 }
-.product-actions a:last-child:hover {
+.product-actions button:last-child:hover {
   color: var(--on-primary-container);
   background: var(--primary-container);
 }
@@ -228,7 +233,7 @@ a {
   display: block;
 }
 
-.product-detail h2 {
+.product-detail h4 {
   color: var(--primary);
 }
 
@@ -286,13 +291,18 @@ dd {
   align-items: center;
 }
 .service-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-unit);
+  justify-content: space-between;
   width: 50%;
-  padding: 20px;
+  padding: var(--base-unit);
   background: var(--surface-container);
   border-radius: 10px;
 }
 
 .service-card > * {
+  margin: 0;
   color: var(--tertiary);
 }
 .service-card a {
@@ -300,10 +310,9 @@ dd {
   gap: calc(var(--base-unit) / 2);
   align-items: center;
   justify-content: center;
-  width: 25%;
   padding: 10px;
-  color: var(--tertiary);
-  background: var(--surface-container);
+  color: var(--on-tertiary);
+  background: var(--tertiary);
   border: 3px solid var(--secondary);
   border-radius: 10px;
   transition: 0.3s;
@@ -312,11 +321,11 @@ dd {
   transition: 0.3s;
 }
 .service-card a:hover {
-  color: var(--on-tertiary);
-  background: var(--tertiary);
+  color: var(--tertiary);
+  background: var(--surface-container);
 }
 .service-card a:hover span {
-  transform: translateX(5px);
+  transform: translateX(10px);
 }
 
 /* 후기 섹션 */
@@ -611,6 +620,18 @@ dd {
   content: "-";
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .detail_product {
@@ -659,12 +680,8 @@ dd {
   .product-actions * {
     font-size: 0.875rem;
   }
-  .product-actions a {
+  .product-actions button {
     gap: calc(var(--base-unit) / 4);
-  }
-
-  .service-card a {
-    width: 50%;
   }
   body {
     padding-bottom: 60px;

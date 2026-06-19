@@ -37,13 +37,13 @@ gantt
 
 ## 팀원
 
-| 이름     | 역할 | 주요 담당 | GitHub                                              | 연락                  |
-| -------- | ---- | --------- | --------------------------------------------------- | --------------------- |
-| 안건욱   |      |           | [agw76638](https://github.com/agw76638)             | agw76638@gmail.com    |
-| 송주윤   |      |           | [Polao63](https://github.com/Polao63)               | hwangdo701@gmail.com  |
-| 장진혁   |      |           | [wwg98](https://github.com/wwg98)                   | wwwg98@gmail.com      |
-| 최정원   |      |           | [RaeChoe](https://github.com/RaeChoe)               | picasomati@gmail.com  |
-| 최이리나 |      |           | [tsoyirina48-ai](https://github.com/tsoyirina48-ai) | tsoyirina48@gmail.com |
+| 이름     | 역할 | 주요 담당                     | GitHub                                              | 연락                  |
+| -------- | ---- | ----------------------------- | --------------------------------------------------- | --------------------- |
+| 안건욱   | 팀장 | 메인 페이지, 공통 요소        | [agw76638](https://github.com/agw76638)             | agw76638@gmail.com    |
+| 송주윤   | 팀원 | 장바구니 페이지               | [Polao63](https://github.com/Polao63)               | hwangdo701@gmail.com  |
+| 장진혁   | 팀원 | 상품 목록 페이지              | [wwg98](https://github.com/wwg98)                   | wwwg98@gmail.com      |
+| 최정원   | 팀원 | 회의록 정리, 상품 상세 페이지 | [RaeChoe](https://github.com/RaeChoe)               | picasomati@gmail.com  |
+| 최이리나 | 팀원 | 로그인/회원가입 페이지        | [tsoyirina48-ai](https://github.com/tsoyirina48-ai) | tsoyirina48@gmail.com |
 
 ## 기술 스택
 

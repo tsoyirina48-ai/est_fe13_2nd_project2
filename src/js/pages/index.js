@@ -104,6 +104,8 @@ function renderFetured() {
       featuredProduct.brand;
     featuredItem.querySelector(".main__featured-title").textContent =
       featuredProduct.title;
+    featuredItem.querySelector(".main__featured-title").href =
+      `detail.html?id=${featuredProduct.id}`;
     featuredItem.querySelector(".main__featured-rating").textContent =
       featuredProduct.rating;
     featuredItem.querySelector(".main__featured-price").textContent =
@@ -113,5 +115,41 @@ function renderFetured() {
   });
 }
 renderFetured();
+
+const reviewBtn = document.querySelector(".main__review-button");
+const reviewModal = document.querySelector(".main__review-modal");
+const closeReviewBtn = document.querySelector(".main__review-button--close");
+reviewBtn.addEventListener("click", () => {
+  reviewModal.showModal();
+});
+
+import { reviews } from "../../../data/reviews.json";
+
+function renderReviews() {
+  const modalReviewContainer = document.querySelector(
+    ".modal__reviews__container",
+  );
+  const modalReviewTemplate = document.querySelector("#modal-review-template");
+
+  reviews.forEach(review => {
+    const reviewModalItem = modalReviewTemplate.content.cloneNode(true);
+    reviewModalItem.querySelector(".modal__review__rating").textContent =
+      review.rating;
+    reviewModalItem.querySelector(".modal__review__comment").textContent =
+      review.content;
+    reviewModalItem.querySelector(".modal__review__username").textContent =
+      review.username;
+    reviewModalItem.querySelector(".modal__review__date").textContent =
+      review.date;
+
+    modalReviewContainer.appendChild(reviewModalItem);
+  });
+}
+
+renderReviews();
+
+closeReviewBtn.addEventListener("click", () => {
+  reviewModal.close();
+});
 
 import "../modules/footer.js";
