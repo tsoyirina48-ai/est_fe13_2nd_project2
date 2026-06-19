@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
+    <link rel="icon" href="/est_fe13_2nd_project/favicon.ico" sizes="any">
+    <script type="module" crossorigin src="/est_fe13_2nd_project/assets/login-RZZfUDp8.js"></script>
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/footer-D0eCpzNq.js">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/footer-JudvOyhq.css">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/login-CS2ELwNI.css">
+  </head>
+  <body data-page="login">
+    <header class="site__header"></header>
+    <main id="content" class="login">
+      <section class="login-container" aria-labelledby="login-heading">
+        <h1 id="login-heading" class="text-headline-large">로그인</h1>
+        <p class="text-body-large">ROUNZ 계정으로 로그인하세요.</p>
+
+        <form class="login-form" novalidate>
+          <div class="auth__field">
+            <label for="email" class="text-title-small">이메일</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="이메일을 입력하세요"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="auth__field">
+            <label for="password" class="text-title-small">비밀번호</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호를 입력하세요"
+              autocomplete="current-password"
+              required
+            >
+          </div>
+
+          <button type="submit" class="login-btn">로그인</button>
+        </form>
+
+        <p class="auth__link text-body-medium">
+          아직 계정이 없으신가요?
+          <a href="./signup.html">회원가입</a>
+        </p>
+
+        <button
+          type="button"
+          class="auth__social auth__social--naver"
+          onclick="window.open('https://nid.naver.com/nidlogin.login', '_blank', 'noopener')"
+        >
+          <img
+            src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.5605%2010.7061L6.14573%200H0V20H6.43946V9.29768L13.8543%2020H20V0H13.5605V10.7061Z'%20fill='white'/%3e%3c/svg%3e"
+            alt=""
+            width="20"
+            height="20"
+          >
+          네이버로 로그인
+        </button>
+        <button
+          type="button"
+          class="auth__social auth__social--kakao"
+          onclick="window.open('https://accounts.kakao.com/login/', '_blank', 'noopener')"
+        >
+          <img
+            src="data:image/svg+xml,%3csvg%20width='36'%20height='34'%20viewBox='0%200%2036%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M17.9999%200C8.05845%200%200%206.25555%200%2013.9729C0%2018.7706%203.1168%2023.0033%207.86295%2025.5189L5.86586%2032.8488C5.68943%2033.4983%206.42681%2034.0137%206.99301%2033.6383L15.7467%2027.8326C16.4854%2027.9042%2017.2361%2027.9459%2017.9999%2027.9459C27.941%2027.9459%2036%2021.6893%2036%2013.9729C36%206.25555%2027.941%200%2017.9999%200C17.9999%200%208.05883%200%2017.9999%200Z'%20fill='black'%20fill-opacity='0.85'/%3e%3c/svg%3e"
+            alt=""
+            width="26"
+            height="24"
+          >
+          카카오로 로그인
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

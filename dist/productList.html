@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUNZ — 세상을 다르게 보는 방법</title>
+    <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
+    <link rel="icon" href="/est_fe13_2nd_project/favicon.ico" sizes="any">
+    <script type="module" crossorigin src="/est_fe13_2nd_project/assets/productList-C4sN0cSr.js"></script>
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/footer-D0eCpzNq.js">
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/products-DBYxXyyF.js">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/footer-JudvOyhq.css">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/productList-CYzJ6gFn.css">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/modern-normalize-BWGR_NNK.css">
+  </head>
+  <body>
+    <header class="site__header"></header>
+
+    <main id="content">
+      <section class="product-intro">
+        <h1 class="text-title-large">Our Collection</h1>
+        <p class="text-body-medium text-opacity">
+          Discover 10 premium eyewear options
+        </p>
+      </section>
+      <button type="button" class="filter-button text-display-small">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="44"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-funnel-icon lucide-funnel"
+        >
+          <path
+            d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"
+          />
+        </svg>Filter
+      </button>
+
+      <!-- Filter Panel -->
+      <div class="filter-panel hidden">
+        <div class="filter-panel__header">
+          <h2 class="filter-panel__title">Filter</h2>
+          <button
+            type="button"
+            class="filter-panel__close-button"
+            aria-label="필터 닫기"
+          >
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="filter-panel__content">
+          <!-- SEARCH Section -->
+          <div class="filter-group">
+            <h3 class="filter-group__title">SEARCH</h3>
+            <div class="search-input-wrapper">
+              <svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="search-icon lucide lucide-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search products..."
+              >
+            </div>
+          </div>
+
+          <!-- CATEGORY Section -->
+          <div class="filter-group">
+            <h4 class="filter-group__title">CATEGORY</h4>
+            <div id="category-filter" class="filter-group__options">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="category" value="all" checked>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="-4 -4 39 39"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    class="checkbox__background"
+                    width="35"
+                    height="35"
+                    x="-2"
+                    y="-2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="3"
+                    rx="6"
+                    ry="6"
+                  ></rect>
+                  <polyline
+                    class="checkbox__checkmark"
+                    points="4,14 12,23 28,5"
+                    stroke="transparent"
+                    stroke-width="4"
+                    fill="none"
+                  ></polyline>
+                </svg>
+                <span>전체</span>
+              </label>
+            </div>
+            <h4 class="filter-group__title">BRAND</h4>
+            <div id="brand-filter" class="filter-group__options">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="category" value="all" checked>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="-4 -4 39 39"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    class="checkbox__background"
+                    width="35"
+                    height="35"
+                    x="-2"
+                    y="-2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="3"
+                    rx="6"
+                    ry="6"
+                  ></rect>
+                  <polyline
+                    class="checkbox__checkmark"
+                    points="4,14 12,23 28,5"
+                    stroke="transparent"
+                    stroke-width="4"
+                    fill="none"
+                  ></polyline>
+                </svg>
+                <span>전체</span>
+              </label>
+            </div>
+            <h4 class="filter-group__title">COLOR</h4>
+            <div id="color-filter" class="filter-group__options">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="category" value="all" checked>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="-4 -4 39 39"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    class="checkbox__background"
+                    width="35"
+                    height="35"
+                    x="-2"
+                    y="-2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="3"
+                    rx="6"
+                    ry="6"
+                  ></rect>
+                  <polyline
+                    class="checkbox__checkmark"
+                    points="4,14 12,23 28,5"
+                    stroke="transparent"
+                    stroke-width="4"
+                    fill="none"
+                  ></polyline>
+                </svg>
+                <span>전체</span>
+              </label>
+            </div>
+            <h4 class="filter-group__title">PRICE RANGE</h4>
+            <div id="Price-filter" class="filter-group__options">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="category" value="all" checked>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="-4 -4 39 39"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    class="checkbox__background"
+                    width="35"
+                    height="35"
+                    x="-2"
+                    y="-2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="3"
+                    rx="6"
+                    ry="6"
+                  ></rect>
+                  <polyline
+                    class="checkbox__checkmark"
+                    points="4,14 12,23 28,5"
+                    stroke="transparent"
+                    stroke-width="4"
+                    fill="none"
+                  ></polyline>
+                </svg>
+                <span>전체</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid"></div>
+
+      <nav class="pagination" aria-label="페이지"></nav>
+    </main>
+
+    <footer class="site__footer"></footer>
+  </body>
+</html>

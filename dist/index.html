@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUNZ — 세상을 다르게 보는 방법</title>
+    <meta name="description" content="ROUNZ — 세상을 다르게 보는 방법">
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <script type="module" crossorigin src="/est_fe13_2nd_project/assets/main-VvPFEE5b.js"></script>
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/footer-D0eCpzNq.js">
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/products-DBYxXyyF.js">
+    <link rel="modulepreload" crossorigin href="/est_fe13_2nd_project/assets/pagination-DQNLyMHj.js">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/footer-JudvOyhq.css">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/pagination-DjMxu4j7.css">
+    <link rel="stylesheet" crossorigin href="/est_fe13_2nd_project/assets/main-DdNSHoSf.css">
+  </head>
+  <body>
+    <header class="site__header"></header>
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="wrapper pile">
+          <div class="hero__heading-group">
+            <h1 id="hero-heading" class="text-headline-medium">
+              ROUNZ — 세상을 다르게 보는 방법
+            </h1>
+            <p class="text-title-small">
+              안경을 사고 쓰는 일이 즐겨운 경험이 되도록
+            </p>
+            <a href="/est_fe13_2nd_project/productList.html">시작하기</a>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="hero__image-1"
+                  src="/est_fe13_2nd_project/images/hero/hero1.webp"
+                  alt=""
+                  width="1200"
+                  height="675"
+                  sizes="(min-width: 0) calc(100vw-40px), (min-width: 75rem) 75rem"
+                  srcset="/est_fe13_2nd_project/images/hero/hero1-480.webp 480w, /est_fe13_2nd_project/images/hero/hero1-768.webp 768w, /est_fe13_2nd_project/images/hero/hero1.webp 1200w"
+                  fetchpriority="high"
+                >
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="hero__image-2"
+                  src="/est_fe13_2nd_project/images/hero/hero2.webp"
+                  alt=""
+                  width="1200"
+                  height="675"
+                  sizes="auto"
+                  srcset="/est_fe13_2nd_project/images/hero/hero2-480.webp 480w, /est_fe13_2nd_project/images/hero/hero2-768.webp 768w, /est_fe13_2nd_project/images/hero/hero2.webp 1200w"
+                  loading="lazy"
+                >
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="hero__image-3"
+                  src="/est_fe13_2nd_project/images/hero/hero3.webp"
+                  alt=""
+                  width="1200"
+                  height="675"
+                  sizes="auto"
+                  srcset="/est_fe13_2nd_project/images/hero/hero3-480.webp 480w, /est_fe13_2nd_project/images/hero/hero3-768.webp 768w, /est_fe13_2nd_project/images/hero/hero3.webp 1200w"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="info" aria-labelledby="info-heading">
+        <div class="wrapper">
+          <h2 id="info-heading" class="text-headline-small">안내</h2>
+          <div class="tabs__container">
+            <ul class="tabs__list" role="tablist">
+              <li role="presentation">
+                <a id="tab-1" href="#notice" class="tab__buttons" role="tab"
+                  >공지</a
+                >
+              </li>
+              <li role="presentation">
+                <a id="tab-2" href="#event" class="tab__buttons" role="tab"
+                  >이벤트</a
+                >
+              </li>
+              <li role="presentation">
+                <a id="tab-3" href="#faq" class="tab__buttons" role="tab"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+            <div class="tabs__panels">
+              <div
+                id="notice"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-1"
+              >
+                <template id="main-notice-template">
+                  <div class="tab__notict__item">
+                    <div class="main__notice__container">
+                      <span class="tab__panel--notice__title"></span>
+                      <span class="tab__panel--notice__date"></span>
+                    </div>
+                  </div>
+                </template>
+
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text"></div>
+              </div>
+              <div
+                id="event"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-2"
+              >
+                <template id="main-event-template">
+                  <details class="main__event__container">
+                    <summary class="tab__panel--event__title"></summary>
+                    <p class="tab__panel--event__description"></p>
+                  </details>
+                </template>
+              </div>
+              <div
+                id="faq"
+                class="tab__panel"
+                role="tabpanel"
+                aria-labelledby="tab-3"
+              >
+                <template id="main-faq-template">
+                  <details class="main__faq__container">
+                    <summary class="tab__panel--faq__question"></summary>
+                    <p class="tab__panel--faq__answer"></p>
+                  </details>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__category" aria-labelledby="main-category-heading">
+        <div class="wrapper">
+          <h2 id="main-category-heading" class="text-headline-small">
+            카테고리
+          </h2>
+          <div class="main__category__grid auto-grid">
+            <a
+              href="/est_fe13_2nd_project/productList.html?action=showSunglasses"
+              class="main__category__item main__category__item--sunglasses"
+            >
+              <svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-hat-glasses-icon lucide-hat-glasses"
+              >
+                <path d="M14 18a2 2 0 0 0-4 0" />
+                <path
+                  d="m19 11-2.11-6.657a2 2 0 0 0-2.752-1.148l-1.276.61A2 2 0 0 1 12 4H8.5a2 2 0 0 0-1.925 1.456L5 11"
+                />
+                <path d="M2 11h20" />
+                <circle cx="17" cy="18" r="3" />
+                <circle cx="7" cy="18" r="3" />
+              </svg>
+              <span>선글라스</span>
+            </a>
+            <a
+              href="/est_fe13_2nd_project/productList.html?action=showLens"
+              class="main__category__item"
+              ><svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lens-convex-icon lucide-lens-convex"
+              >
+                <path
+                  d="M13.433 2a1 1 0 0 1 .824.448 18 18 0 0 1 0 19.104 1 1 0 0 1-.824.448h-2.866a1 1 0 0 1-.824-.448 18 18 0 0 1 0-19.104A1 1 0 0 1 10.567 2z"
+                />
+              </svg><span>렌즈</span></a
+            >
+            <a
+              href="/est_fe13_2nd_project/productList.html?action=showAccessory"
+              class="main__category__item"
+              ><svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-tool-case-icon lucide-tool-case"
+              >
+                <path d="M10 15h4" />
+                <path
+                  d="m14.817 10.995-.971-1.45 1.034-1.232a2 2 0 0 0-2.025-3.238l-1.82.364L9.91 3.885a2 2 0 0 0-3.625.748L6.141 6.55l-1.725.426a2 2 0 0 0-.19 3.756l.657.27"
+                />
+                <path
+                  d="m18.822 10.995 2.26-5.38a1 1 0 0 0-.557-1.318L16.954 2.9a1 1 0 0 0-1.281.533l-.924 2.122"
+                />
+                <path
+                  d="M4 12.006A1 1 0 0 1 4.994 11H19a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"
+                />
+              </svg><span>액세서리</span></a
+            >
+            <a
+              href="/est_fe13_2nd_project/productList.html?action=showEyewear"
+              class="main__category__item"
+            >
+              <svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-view-icon lucide-view"
+              >
+                <path d="M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2" />
+                <path d="M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2" />
+                <circle cx="12" cy="12" r="1" />
+                <path
+                  d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0"
+                />
+              </svg><span>아이웨어</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="main__featured" aria-labelledby="main-featured-heading">
+        <div class="wrapper">
+          <div class="main__featured-heading-group">
+            <h2 id="main-featured-heading" class="text-headline-small">
+              추천 컬렉션
+            </h2>
+            <a
+              href="/est_fe13_2nd_project/productList.html"
+              class="text-label-medium"
+              >더 보기 ></a
+            >
+          </div>
+          <div class="main__featured-container auto-grid">
+            <template id="main-featured-template">
+              <div class="main__featured-card">
+                <img
+                  class="main__featured-image"
+                  src=""
+                  alt=""
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                >
+                <div class="main__featured-card-content">
+                  <p class="main__featured-brand text-label-medium"></p>
+                  <h3>
+                    <a href="#" class="main__featured-title text-label-medium"
+                      >.</a
+                    >
+                  </h3>
+                  <div class="main__featured-rating-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <title>별점</title>
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+                    <span class="main__featured-rating"></span>
+                  </div>
+                  <p class="main__featured-price text-body-large"></p>
+                </div>
+              </div>
+            </template>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton img-placeholder"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__brand" aria-labelledby="main-brand-heading">
+        <div class="wrapper">
+          <img
+            src="/est_fe13_2nd_project/images/main-brand-bg.webp"
+            alt=""
+            loading="lazy"
+            width="1200"
+            height="800"
+            sizes="auto"
+            srcset="/est_fe13_2nd_project/images/main-brand-bg-480.webp 480w, /est_fe13_2nd_project/images/main-brand-bg-768.webp 768w, /est_fe13_2nd_project/images/main-brand-bg.webp 1200w"
+          >
+          <h2 id="main-brand-heading" class="text-headline-medium">
+            당신의 시선을 완성하다
+          </h2>
+          <p>라이프 스타일을 완성하는 프리미엄 안경</p>
+          <a href="/est_fe13_2nd_project/productList.html"
+            >지금 바로 시작하기</a
+          >
+        </div>
+      </section>
+      <section class="main__review" aria-labelledby="main-review-heading">
+        <div class="wrapper">
+          <div class="main__review-heading-group">
+            <h2 id="main-review-heading" class="text-headline-small">후기</h2>
+            <button type="button" class="main__review-button text-label-medium">
+              더 보기 >
+            </button>
+          </div>
+          <dialog class="main__review-modal">
+            <div class="modal__reviews__container">
+              <template id="modal-review-template">
+                <div class="modal__review__container">
+                  <div class="modal__rating__container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <title>별점</title>
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+                    <span class="modal__review__rating"></span>
+                  </div>
+                  <div class="">
+                    <p class="modal__review__comment"></p>
+                    <span class="modal__review__username"></span>
+                    <span class="modal__review__date"></span>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <button type="button" class="main__review-button--close">
+              닫기
+            </button>
+          </dialog>
+          <div class="auto-grid">
+            <div class="main__review-card">
+              <img
+                src="/est_fe13_2nd_project/images/avatars/review1.webp"
+                alt="clumsy7206 프로필 이미지"
+                width="150"
+                height="150"
+                loading="lazy"
+              >
+              <p>
+                안경 도수도 처음이고 뭘 골라야 할지 몰랐는데, 상담 덕분에
+                얼굴형에 맞는 프레임을 추천받았어요. 렌즈 코팅도 꼼꼼하게
+                설명해주셔서 블루라이트 차단 옵션으로 선택했는데 하루 종일
+                컴퓨터 앞에 앉아 있어도 눈이 훨씬 덜 피로하네요. 배송도 빠르고
+                케이스까지 예뻐서 선물받은 기분이었어요. 다음엔 선글라스도
+                여기서 맞춰볼 생각입니다!
+              </p>
+              <p>- clumsy7206</p>
+            </div>
+            <div class="main__review-card">
+              <img
+                src="/est_fe13_2nd_project/images/avatars/review2.webp"
+                alt=" lushness2226프로필 이미지"
+                width="150"
+                height="150"
+                loading="lazy"
+              >
+              <p>
+                처음엔 좀 불안했는데 정밀 검안 결과지 그대로 넣어주시고 PD
+                측정도 앱으로 간편하게 해서 딱 맞게 제작해 주셨어요. 얇고 가벼운
+                티타늄 프레임인데 착용감도 좋고 마감도 고급스럽습니다. 주변
+                친구들한테 이미 여러 명 추천했어요.
+              </p>
+              <p>- lushness2226</p>
+            </div>
+            <div class="main__review-card">
+              <img
+                src="/est_fe13_2nd_project/images/avatars/review3.webp"
+                alt="sprung9113 프로필 이미지"
+                width="150"
+                height="150"
+                loading="lazy"
+              >
+              <p>
+                안경테 고르는 게 항상 어려웠는데, 여기는 얼굴형·피부톤별 추천
+                필터가 있어서 고민을 확 줄여줬어요. 빈티지 라운드 프레임
+                골랐는데 사진보다 실물이 훨씬 예쁘고 컬러도 딱 원하던 올리브
+                골드예요. 코 패드 조절도 세심하게 맞춰져서 흘러내림 없이 하루
+                종일 편하게 쓸 수 있어요. 패키징도 감성적으로 잘 돼 있어서
+                언박싱할 때 기분이 좋았습니다. 매년 여기서 맞출 것 같아요
+              </p>
+              <p>- sprung9113</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__cta" aria-labelledby="main-cta-heading">
+        <div class="wrapper">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-truck-electric-icon lucide-truck-electric"
+          >
+            <path d="M14 19V7a2 2 0 0 0-2-2H9" />
+            <path d="M15 19H9" />
+            <path
+              d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14"
+            />
+            <path d="M2 13v5a1 1 0 0 0 1 1h2" />
+            <path
+              d="M4 3 2.15 5.15a.495.495 0 0 0 .35.86h2.15a.47.47 0 0 1 .35.86L3 9.02"
+            />
+            <circle cx="17" cy="19" r="2" />
+            <circle cx="7" cy="19" r="2" />
+          </svg>
+          <div class="main__cta-text-container">
+            <h2 id="main-cta-heading" class="text-headline-medium">
+              지금 바로 시작하세요
+            </h2>
+            <p>전 상품 무료 배송</p>
+            <a href="/est_fe13_2nd_project/productList.html">쇼핑하기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site__footer"></footer>
+  </body>
+</html>
